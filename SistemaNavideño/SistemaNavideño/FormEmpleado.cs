@@ -31,7 +31,8 @@ namespace SistemaNavideño
 
         private void listaClientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Listado l = new Listado();
+            l.ShowDialog();
         }
 
 
@@ -43,7 +44,6 @@ namespace SistemaNavideño
         private void button2_Click(object sender, EventArgs e)
         {
             Close();
-
         }
 
         private void registroDeEmpresasToolStripMenuItem_Click(object sender, EventArgs e)
@@ -56,6 +56,12 @@ namespace SistemaNavideño
         {
             Catalogos cat = new Catalogos();
             cat.ShowDialog();
+        }
+
+        private void reservaDePedidosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Pedidos ped = new Pedidos();
+            ped.ShowDialog();
         }
     }
 }

@@ -19,9 +19,8 @@ namespace SistemaNavideño
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*('" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "','" + textBox5.Text + "', '"+ textBox6.Text +"')";
-            cliente_EmpresaTableAdapter.Insert((int IdEmp, 
-            MessageBox.Show("Registrado exitosamente!");*/
+            cliente_EmpresaTableAdapter.Insert(Convert.ToInt32(textBox1.Text), textBox2.Text, Convert.ToInt32(textBox3.Text), textBox4.Text, Convert.ToInt32(textBox5.Text), textBox6.Text);
+            cliente_EmpresaTableAdapter.Fill(tarjetaVentaDataSet._Cliente_Empresa);
         }
 
         private void Empresas_Load(object sender, EventArgs e)
@@ -30,5 +29,29 @@ namespace SistemaNavideño
             this.cliente_EmpresaTableAdapter.Fill(this.tarjetaVentaDataSet._Cliente_Empresa);
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            cliente_EmpresaTableAdapter.modificar(Convert.ToInt32(textBox1.Text), textBox2.Text, Convert.ToInt32(textBox3.Text), textBox4.Text, Convert.ToInt32(textBox5.Text), textBox6.Text,Convert.ToInt32(textBox1.Text));
+            cliente_EmpresaTableAdapter.Fill(tarjetaVentaDataSet._Cliente_Empresa);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            cliente_EmpresaTableAdapter.eliminar(Convert.ToInt32(textBox1.Text));
+            cliente_EmpresaTableAdapter.Fill(tarjetaVentaDataSet._Cliente_Empresa);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
+            textBox6.Clear();
+
+        }
+
     }
 }

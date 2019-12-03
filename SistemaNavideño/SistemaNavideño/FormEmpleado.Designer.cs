@@ -86,6 +86,7 @@
             this.reservaDePedidosToolStripMenuItem.Name = "reservaDePedidosToolStripMenuItem";
             this.reservaDePedidosToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
             this.reservaDePedidosToolStripMenuItem.Text = "Reserva de Pedidos";
+            this.reservaDePedidosToolStripMenuItem.Click += new System.EventHandler(this.reservaDePedidosToolStripMenuItem_Click);
             // 
             // otroCasoToolStripMenuItem
             // 
@@ -104,7 +105,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(415, -50);
+            this.pictureBox1.Location = new System.Drawing.Point(415, -12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(346, 465);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

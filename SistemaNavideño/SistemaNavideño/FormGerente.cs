@@ -40,5 +40,10 @@ namespace SistemaNavideño
             FormStock fs = new FormStock();
             fs.ShowDialog();
         }
+
+        private void FormGerente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
