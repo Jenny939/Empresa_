@@ -30,6 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormStock));
+            System.Windows.Forms.Label idTarjetaLabel;
+            System.Windows.Forms.Label tipoLabel;
+            System.Windows.Forms.Label cantidadLabel;
             this.tarjetaVentaDataSet = new SistemaNavideño.TarjetaVentaDataSet();
             this.stockBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.stockTableAdapter = new SistemaNavideño.TarjetaVentaDataSetTableAdapters.StockTableAdapter();
@@ -51,11 +54,30 @@
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.catálogoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.catálogoTableAdapter = new SistemaNavideño.TarjetaVentaDataSetTableAdapters.CatálogoTableAdapter();
+            this.catálogoDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stockBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.idTarjetaTextBox = new System.Windows.Forms.TextBox();
+            this.tipoTextBox = new System.Windows.Forms.TextBox();
+            this.cantidadTextBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            idTarjetaLabel = new System.Windows.Forms.Label();
+            tipoLabel = new System.Windows.Forms.Label();
+            cantidadLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tarjetaVentaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockBindingNavigator)).BeginInit();
             this.stockBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stockDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.catálogoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.catálogoDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stockBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // tarjetaVentaDataSet
@@ -75,7 +97,7 @@
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.CatálogoTableAdapter = null;
+            this.tableAdapterManager.CatálogoTableAdapter = this.catálogoTableAdapter;
             this.tableAdapterManager.Cliente_EmpresaTableAdapter = null;
             this.tableAdapterManager.Detalle_pedidoTableAdapter = null;
             this.tableAdapterManager.Detalle_VentaTableAdapter = null;
@@ -111,7 +133,7 @@
             this.stockBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.stockBindingNavigator.Name = "stockBindingNavigator";
             this.stockBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.stockBindingNavigator.Size = new System.Drawing.Size(694, 25);
+            this.stockBindingNavigator.Size = new System.Drawing.Size(595, 25);
             this.stockBindingNavigator.TabIndex = 0;
             this.stockBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -218,9 +240,9 @@
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
             this.stockDataGridView.DataSource = this.stockBindingSource;
-            this.stockDataGridView.Location = new System.Drawing.Point(21, 46);
+            this.stockDataGridView.Location = new System.Drawing.Point(228, 28);
             this.stockDataGridView.Name = "stockDataGridView";
-            this.stockDataGridView.Size = new System.Drawing.Size(340, 220);
+            this.stockDataGridView.Size = new System.Drawing.Size(342, 185);
             this.stockDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -241,11 +263,139 @@
             this.dataGridViewTextBoxColumn3.HeaderText = "Cantidad";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
+            // catálogoBindingSource
+            // 
+            this.catálogoBindingSource.DataMember = "Catálogo";
+            this.catálogoBindingSource.DataSource = this.tarjetaVentaDataSet;
+            // 
+            // catálogoTableAdapter
+            // 
+            this.catálogoTableAdapter.ClearBeforeFill = true;
+            // 
+            // catálogoDataGridView
+            // 
+            this.catálogoDataGridView.AutoGenerateColumns = false;
+            this.catálogoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.catálogoDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8});
+            this.catálogoDataGridView.DataSource = this.catálogoBindingSource;
+            this.catálogoDataGridView.Location = new System.Drawing.Point(29, 233);
+            this.catálogoDataGridView.Name = "catálogoDataGridView";
+            this.catálogoDataGridView.Size = new System.Drawing.Size(541, 220);
+            this.catálogoDataGridView.TabIndex = 2;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "IdTarjeta";
+            this.dataGridViewTextBoxColumn4.HeaderText = "IdTarjeta";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "nombre";
+            this.dataGridViewTextBoxColumn5.HeaderText = "nombre";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Tipo";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Tipo";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Descripción";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Descripción";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Precio";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Precio";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // stockBindingSource1
+            // 
+            this.stockBindingSource1.DataMember = "CatálogoStock";
+            this.stockBindingSource1.DataSource = this.catálogoBindingSource;
+            // 
+            // idTarjetaLabel
+            // 
+            idTarjetaLabel.AutoSize = true;
+            idTarjetaLabel.Location = new System.Drawing.Point(43, 111);
+            idTarjetaLabel.Name = "idTarjetaLabel";
+            idTarjetaLabel.Size = new System.Drawing.Size(55, 13);
+            idTarjetaLabel.TabIndex = 3;
+            idTarjetaLabel.Text = "Id Tarjeta:";
+            // 
+            // idTarjetaTextBox
+            // 
+            this.idTarjetaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.stockBindingSource1, "IdTarjeta", true));
+            this.idTarjetaTextBox.Location = new System.Drawing.Point(104, 108);
+            this.idTarjetaTextBox.Name = "idTarjetaTextBox";
+            this.idTarjetaTextBox.Size = new System.Drawing.Size(100, 20);
+            this.idTarjetaTextBox.TabIndex = 4;
+            // 
+            // tipoLabel
+            // 
+            tipoLabel.AutoSize = true;
+            tipoLabel.Location = new System.Drawing.Point(67, 146);
+            tipoLabel.Name = "tipoLabel";
+            tipoLabel.Size = new System.Drawing.Size(31, 13);
+            tipoLabel.TabIndex = 5;
+            tipoLabel.Text = "Tipo:";
+            // 
+            // tipoTextBox
+            // 
+            this.tipoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.stockBindingSource1, "Tipo", true));
+            this.tipoTextBox.Location = new System.Drawing.Point(104, 143);
+            this.tipoTextBox.Name = "tipoTextBox";
+            this.tipoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.tipoTextBox.TabIndex = 6;
+            // 
+            // cantidadLabel
+            // 
+            cantidadLabel.AutoSize = true;
+            cantidadLabel.Location = new System.Drawing.Point(46, 185);
+            cantidadLabel.Name = "cantidadLabel";
+            cantidadLabel.Size = new System.Drawing.Size(52, 13);
+            cantidadLabel.TabIndex = 7;
+            cantidadLabel.Text = "Cantidad:";
+            // 
+            // cantidadTextBox
+            // 
+            this.cantidadTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.stockBindingSource1, "Cantidad", true));
+            this.cantidadTextBox.Location = new System.Drawing.Point(104, 182);
+            this.cantidadTextBox.Name = "cantidadTextBox";
+            this.cantidadTextBox.Size = new System.Drawing.Size(100, 20);
+            this.cantidadTextBox.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(67, 59);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(94, 13);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "CAMBIAR STOCK";
+            // 
             // FormStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(694, 367);
+            this.ClientSize = new System.Drawing.Size(595, 536);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(cantidadLabel);
+            this.Controls.Add(this.cantidadTextBox);
+            this.Controls.Add(tipoLabel);
+            this.Controls.Add(this.tipoTextBox);
+            this.Controls.Add(idTarjetaLabel);
+            this.Controls.Add(this.idTarjetaTextBox);
+            this.Controls.Add(this.catálogoDataGridView);
             this.Controls.Add(this.stockDataGridView);
             this.Controls.Add(this.stockBindingNavigator);
             this.Name = "FormStock";
@@ -257,6 +407,9 @@
             this.stockBindingNavigator.ResumeLayout(false);
             this.stockBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stockDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.catálogoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.catálogoDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stockBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,5 +438,18 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private TarjetaVentaDataSetTableAdapters.CatálogoTableAdapter catálogoTableAdapter;
+        private System.Windows.Forms.BindingSource catálogoBindingSource;
+        private System.Windows.Forms.DataGridView catálogoDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.BindingSource stockBindingSource1;
+        private System.Windows.Forms.TextBox idTarjetaTextBox;
+        private System.Windows.Forms.TextBox tipoTextBox;
+        private System.Windows.Forms.TextBox cantidadTextBox;
+        private System.Windows.Forms.Label label1;
     }
 }

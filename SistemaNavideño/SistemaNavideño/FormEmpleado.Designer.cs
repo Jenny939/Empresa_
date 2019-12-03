@@ -72,12 +72,14 @@
             this.registroDeEmpresasToolStripMenuItem.Name = "registroDeEmpresasToolStripMenuItem";
             this.registroDeEmpresasToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
             this.registroDeEmpresasToolStripMenuItem.Text = "Registro de Empresas";
+            this.registroDeEmpresasToolStripMenuItem.Click += new System.EventHandler(this.registroDeEmpresasToolStripMenuItem_Click);
             // 
             // registroDeCatálogosToolStripMenuItem
             // 
             this.registroDeCatálogosToolStripMenuItem.Name = "registroDeCatálogosToolStripMenuItem";
             this.registroDeCatálogosToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
             this.registroDeCatálogosToolStripMenuItem.Text = "Registro de Catálogos";
+            this.registroDeCatálogosToolStripMenuItem.Click += new System.EventHandler(this.registroDeCatálogosToolStripMenuItem_Click);
             // 
             // reservaDePedidosToolStripMenuItem
             // 
@@ -102,22 +104,13 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-<<<<<<< HEAD
-            this.pictureBox1.Location = new System.Drawing.Point(407, -11);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(354, 465);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-=======
-            this.pictureBox1.Location = new System.Drawing.Point(312, -47);
+            this.pictureBox1.Location = new System.Drawing.Point(415, -50);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(346, 465);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
->>>>>>> 20b3396886ac50e5e9dbf67f6a5eb10db1e77923
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 

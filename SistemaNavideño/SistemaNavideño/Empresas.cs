@@ -19,9 +19,9 @@ namespace SistemaNavideño
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ('" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "','" + textBox5.Text + "', '"+ textBox6.Text +"')";
+            /*('" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "','" + textBox5.Text + "', '"+ textBox6.Text +"')";
             cliente_EmpresaTableAdapter.Insert((int IdEmp, 
-            MessageBox.Show("Registrado exitosamente!");
+            MessageBox.Show("Registrado exitosamente!");*/
         }
 
         private void Empresas_Load(object sender, EventArgs e)

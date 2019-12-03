@@ -27,6 +27,8 @@ namespace SistemaNavideño
 
         private void FormStock_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'tarjetaVentaDataSet.Catálogo' Puede moverla o quitarla según sea necesario.
+            this.catálogoTableAdapter.Fill(this.tarjetaVentaDataSet.Catálogo);
             // TODO: esta línea de código carga datos en la tabla 'tarjetaVentaDataSet.Stock' Puede moverla o quitarla según sea necesario.
             this.stockTableAdapter.Fill(this.tarjetaVentaDataSet.Stock);
 

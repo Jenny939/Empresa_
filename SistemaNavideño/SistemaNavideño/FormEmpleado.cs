@@ -34,15 +34,28 @@ namespace SistemaNavideño
 
         }
 
-<<<<<<< HEAD
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+        }
 
-=======
+
         private void button2_Click(object sender, EventArgs e)
         {
             Close();
->>>>>>> 20b3396886ac50e5e9dbf67f6a5eb10db1e77923
+
+        }
+
+        private void registroDeEmpresasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Empresas emp = new Empresas();
+            emp.ShowDialog();
+        }
+
+        private void registroDeCatálogosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Catalogos cat = new Catalogos();
+            cat.ShowDialog();
         }
     }
 }
