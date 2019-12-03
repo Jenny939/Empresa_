@@ -35,8 +35,8 @@
             this.yOtroCasoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.otroCasoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listaClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.reporteDeGananciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -91,12 +91,19 @@
             this.otroCasoToolStripMenuItem.Name = "otroCasoToolStripMenuItem";
             this.otroCasoToolStripMenuItem.Size = new System.Drawing.Size(141, 20);
             this.otroCasoToolStripMenuItem.Text = "Reporte de ventas";
+            this.otroCasoToolStripMenuItem.Click += new System.EventHandler(this.otroCasoToolStripMenuItem_Click);
             // 
             // listaClientesToolStripMenuItem
             // 
             this.listaClientesToolStripMenuItem.Name = "listaClientesToolStripMenuItem";
             this.listaClientesToolStripMenuItem.Size = new System.Drawing.Size(116, 20);
             this.listaClientesToolStripMenuItem.Text = "Verificar Stock";
+            // 
+            // reporteDeGananciasToolStripMenuItem
+            // 
+            this.reporteDeGananciasToolStripMenuItem.Name = "reporteDeGananciasToolStripMenuItem";
+            this.reporteDeGananciasToolStripMenuItem.Size = new System.Drawing.Size(161, 20);
+            this.reporteDeGananciasToolStripMenuItem.Text = "Reporte de Ganancias";
             // 
             // pictureBox1
             // 
@@ -107,12 +114,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
-            // 
-            // reporteDeGananciasToolStripMenuItem
-            // 
-            this.reporteDeGananciasToolStripMenuItem.Name = "reporteDeGananciasToolStripMenuItem";
-            this.reporteDeGananciasToolStripMenuItem.Size = new System.Drawing.Size(161, 20);
-            this.reporteDeGananciasToolStripMenuItem.Text = "Reporte de Ganancias";
             // 
             // button1
             // 
