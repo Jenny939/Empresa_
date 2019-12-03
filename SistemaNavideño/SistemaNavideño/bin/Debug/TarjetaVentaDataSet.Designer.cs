@@ -4930,12 +4930,17 @@ namespace SistemaNavideño.TarjetaVentaDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
+            this._commandCollection = new global::System.Data.OleDb.OleDbCommand[2];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT IdEmp, Nombre, NroEmpleado, Descripccion, PorcentajeCompra, Afiliado FROM " +
                 "[Cliente/Empresa]";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.OleDb.OleDbCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT        IdEmp, Nombre, NroEmpleado, Descripccion, PorcentajeCompra, Afiliad" +
+                "o\r\nFROM            [Cliente/Empresa]\r\nWHERE        (Afiliado LIKE \'NO\')";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4957,6 +4962,30 @@ namespace SistemaNavideño.TarjetaVentaDataSetTableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual TarjetaVentaDataSet._Cliente_EmpresaDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            TarjetaVentaDataSet._Cliente_EmpresaDataTable dataTable = new TarjetaVentaDataSet._Cliente_EmpresaDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int Mostrar(TarjetaVentaDataSet._Cliente_EmpresaDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual TarjetaVentaDataSet._Cliente_EmpresaDataTable Afiliar() {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
             TarjetaVentaDataSet._Cliente_EmpresaDataTable dataTable = new TarjetaVentaDataSet._Cliente_EmpresaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;

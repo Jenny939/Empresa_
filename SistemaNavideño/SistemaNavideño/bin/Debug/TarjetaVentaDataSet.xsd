@@ -146,7 +146,18 @@
               <Mapping SourceColumn="PorcentajeCompra" DataSetColumn="PorcentajeCompra" />
               <Mapping SourceColumn="Afiliado" DataSetColumn="Afiliado" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="TarjetaVentaConnectionString (Settings)" DbObjectName="Cliente/Empresa" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Mostrar" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="Afiliar" GeneratorSourceName="Mostrar" GetMethodModifier="Public" GetMethodName="Afiliar" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="Afiliar" UserSourceName="Mostrar">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        IdEmp, Nombre, NroEmpleado, Descripccion, PorcentajeCompra, Afiliado
+FROM            [Cliente/Empresa]
+WHERE        (Afiliado LIKE 'NO')</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Detalle_pedidoTableAdapter" GeneratorDataComponentClassName="Detalle_pedidoTableAdapter" Name="Detalle_pedido" UserDataComponentName="Detalle_pedidoTableAdapter">
             <MainSource>
@@ -320,7 +331,7 @@
               <Mapping SourceColumn="Cargo" DataSetColumn="Cargo" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="TarjetaVentaConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="eliminar" Modifier="Public" Name="eliminar" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="eliminar">
+              <DbSource ConnectionRef="TarjetaVentaConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="eliminar" Modifier="Public" Name="eliminar" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="eliminar">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>DELETE FROM Empleado
@@ -331,7 +342,7 @@ WHERE        (Cod_Empleado = ?)</CommandText>
                   </DbCommand>
                 </DeleteCommand>
               </DbSource>
-              <DbSource ConnectionRef="TarjetaVentaConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="modificar" Modifier="Public" Name="modificar" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="modificar">
+              <DbSource ConnectionRef="TarjetaVentaConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="modificar" Modifier="Public" Name="modificar" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="modificar">
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>UPDATE       Empleado
@@ -507,7 +518,7 @@ WHERE        (Cod_Empleado = ?)</CommandText>
   <xs:element name="TarjetaVentaDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="TarjetaVentaDataSet" msprop:Generator_UserDSName="TarjetaVentaDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Catálogo" msprop:Generator_TableClassName="CatálogoDataTable" msprop:Generator_TableVarName="tableCatálogo" msprop:Generator_RowChangedName="CatálogoRowChanged" msprop:Generator_TablePropName="Catálogo" msprop:Generator_RowDeletingName="CatálogoRowDeleting" msprop:Generator_RowChangingName="CatálogoRowChanging" msprop:Generator_RowEvHandlerName="CatálogoRowChangeEventHandler" msprop:Generator_RowDeletedName="CatálogoRowDeleted" msprop:Generator_RowClassName="CatálogoRow" msprop:Generator_UserTableName="Catálogo" msprop:Generator_RowEvArgName="CatálogoRowChangeEvent">
+        <xs:element name="Catálogo" msprop:Generator_TableClassName="CatálogoDataTable" msprop:Generator_TableVarName="tableCatálogo" msprop:Generator_TablePropName="Catálogo" msprop:Generator_RowDeletingName="CatálogoRowDeleting" msprop:Generator_RowChangingName="CatálogoRowChanging" msprop:Generator_RowEvHandlerName="CatálogoRowChangeEventHandler" msprop:Generator_RowDeletedName="CatálogoRowDeleted" msprop:Generator_UserTableName="Catálogo" msprop:Generator_RowChangedName="CatálogoRowChanged" msprop:Generator_RowEvArgName="CatálogoRowChangeEvent" msprop:Generator_RowClassName="CatálogoRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="IdTarjeta" msprop:Generator_ColumnVarNameInTable="columnIdTarjeta" msprop:Generator_ColumnPropNameInRow="IdTarjeta" msprop:Generator_ColumnPropNameInTable="IdTarjetaColumn" msprop:Generator_UserColumnName="IdTarjeta" type="xs:int" />
@@ -536,7 +547,7 @@ WHERE        (Cod_Empleado = ?)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Cliente_x002F_Empresa" msprop:Generator_TableClassName="_Cliente_EmpresaDataTable" msprop:Generator_TableVarName="_tableCliente_Empresa" msprop:Generator_RowChangedName="_Cliente_EmpresaRowChanged" msprop:Generator_TablePropName="_Cliente_Empresa" msprop:Generator_RowDeletingName="_Cliente_EmpresaRowDeleting" msprop:Generator_RowChangingName="_Cliente_EmpresaRowChanging" msprop:Generator_RowEvHandlerName="_Cliente_EmpresaRowChangeEventHandler" msprop:Generator_RowDeletedName="_Cliente_EmpresaRowDeleted" msprop:Generator_RowClassName="_Cliente_EmpresaRow" msprop:Generator_UserTableName="Cliente/Empresa" msprop:Generator_RowEvArgName="_Cliente_EmpresaRowChangeEvent">
+        <xs:element name="Cliente_x002F_Empresa" msprop:Generator_TableClassName="_Cliente_EmpresaDataTable" msprop:Generator_TableVarName="_tableCliente_Empresa" msprop:Generator_TablePropName="_Cliente_Empresa" msprop:Generator_RowDeletingName="_Cliente_EmpresaRowDeleting" msprop:Generator_RowChangingName="_Cliente_EmpresaRowChanging" msprop:Generator_RowEvHandlerName="_Cliente_EmpresaRowChangeEventHandler" msprop:Generator_RowDeletedName="_Cliente_EmpresaRowDeleted" msprop:Generator_UserTableName="Cliente/Empresa" msprop:Generator_RowChangedName="_Cliente_EmpresaRowChanged" msprop:Generator_RowEvArgName="_Cliente_EmpresaRowChangeEvent" msprop:Generator_RowClassName="_Cliente_EmpresaRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="IdEmp" msprop:Generator_ColumnVarNameInTable="columnIdEmp" msprop:Generator_ColumnPropNameInRow="IdEmp" msprop:Generator_ColumnPropNameInTable="IdEmpColumn" msprop:Generator_UserColumnName="IdEmp" type="xs:int" />
@@ -566,7 +577,7 @@ WHERE        (Cod_Empleado = ?)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Detalle_pedido" msprop:Generator_TableClassName="Detalle_pedidoDataTable" msprop:Generator_TableVarName="tableDetalle_pedido" msprop:Generator_RowChangedName="Detalle_pedidoRowChanged" msprop:Generator_TablePropName="Detalle_pedido" msprop:Generator_RowDeletingName="Detalle_pedidoRowDeleting" msprop:Generator_RowChangingName="Detalle_pedidoRowChanging" msprop:Generator_RowEvHandlerName="Detalle_pedidoRowChangeEventHandler" msprop:Generator_RowDeletedName="Detalle_pedidoRowDeleted" msprop:Generator_RowClassName="Detalle_pedidoRow" msprop:Generator_UserTableName="Detalle_pedido" msprop:Generator_RowEvArgName="Detalle_pedidoRowChangeEvent">
+        <xs:element name="Detalle_pedido" msprop:Generator_TableClassName="Detalle_pedidoDataTable" msprop:Generator_TableVarName="tableDetalle_pedido" msprop:Generator_TablePropName="Detalle_pedido" msprop:Generator_RowDeletingName="Detalle_pedidoRowDeleting" msprop:Generator_RowChangingName="Detalle_pedidoRowChanging" msprop:Generator_RowEvHandlerName="Detalle_pedidoRowChangeEventHandler" msprop:Generator_RowDeletedName="Detalle_pedidoRowDeleted" msprop:Generator_UserTableName="Detalle_pedido" msprop:Generator_RowChangedName="Detalle_pedidoRowChanged" msprop:Generator_RowEvArgName="Detalle_pedidoRowChangeEvent" msprop:Generator_RowClassName="Detalle_pedidoRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="IdTarjeta" msprop:Generator_ColumnVarNameInTable="columnIdTarjeta" msprop:Generator_ColumnPropNameInRow="IdTarjeta" msprop:Generator_ColumnPropNameInTable="IdTarjetaColumn" msprop:Generator_UserColumnName="IdTarjeta" type="xs:int" />
@@ -574,7 +585,7 @@ WHERE        (Cod_Empleado = ?)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Detalle_Venta" msprop:Generator_TableClassName="Detalle_VentaDataTable" msprop:Generator_TableVarName="tableDetalle_Venta" msprop:Generator_RowChangedName="Detalle_VentaRowChanged" msprop:Generator_TablePropName="Detalle_Venta" msprop:Generator_RowDeletingName="Detalle_VentaRowDeleting" msprop:Generator_RowChangingName="Detalle_VentaRowChanging" msprop:Generator_RowEvHandlerName="Detalle_VentaRowChangeEventHandler" msprop:Generator_RowDeletedName="Detalle_VentaRowDeleted" msprop:Generator_RowClassName="Detalle_VentaRow" msprop:Generator_UserTableName="Detalle_Venta" msprop:Generator_RowEvArgName="Detalle_VentaRowChangeEvent">
+        <xs:element name="Detalle_Venta" msprop:Generator_TableClassName="Detalle_VentaDataTable" msprop:Generator_TableVarName="tableDetalle_Venta" msprop:Generator_TablePropName="Detalle_Venta" msprop:Generator_RowDeletingName="Detalle_VentaRowDeleting" msprop:Generator_RowChangingName="Detalle_VentaRowChanging" msprop:Generator_RowEvHandlerName="Detalle_VentaRowChangeEventHandler" msprop:Generator_RowDeletedName="Detalle_VentaRowDeleted" msprop:Generator_UserTableName="Detalle_Venta" msprop:Generator_RowChangedName="Detalle_VentaRowChanged" msprop:Generator_RowEvArgName="Detalle_VentaRowChangeEvent" msprop:Generator_RowClassName="Detalle_VentaRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="IdVenta" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnIdVenta" msprop:Generator_ColumnPropNameInRow="IdVenta" msprop:Generator_ColumnPropNameInTable="IdVentaColumn" msprop:Generator_UserColumnName="IdVenta" type="xs:int" />
@@ -584,7 +595,7 @@ WHERE        (Cod_Empleado = ?)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Empleado" msprop:Generator_TableClassName="EmpleadoDataTable" msprop:Generator_TableVarName="tableEmpleado" msprop:Generator_RowChangedName="EmpleadoRowChanged" msprop:Generator_TablePropName="Empleado" msprop:Generator_RowDeletingName="EmpleadoRowDeleting" msprop:Generator_RowChangingName="EmpleadoRowChanging" msprop:Generator_RowEvHandlerName="EmpleadoRowChangeEventHandler" msprop:Generator_RowDeletedName="EmpleadoRowDeleted" msprop:Generator_RowClassName="EmpleadoRow" msprop:Generator_UserTableName="Empleado" msprop:Generator_RowEvArgName="EmpleadoRowChangeEvent">
+        <xs:element name="Empleado" msprop:Generator_TableClassName="EmpleadoDataTable" msprop:Generator_TableVarName="tableEmpleado" msprop:Generator_TablePropName="Empleado" msprop:Generator_RowDeletingName="EmpleadoRowDeleting" msprop:Generator_RowChangingName="EmpleadoRowChanging" msprop:Generator_RowEvHandlerName="EmpleadoRowChangeEventHandler" msprop:Generator_RowDeletedName="EmpleadoRowDeleted" msprop:Generator_UserTableName="Empleado" msprop:Generator_RowChangedName="EmpleadoRowChanged" msprop:Generator_RowEvArgName="EmpleadoRowChangeEvent" msprop:Generator_RowClassName="EmpleadoRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Cod_Empleado" msprop:Generator_ColumnVarNameInTable="columnCod_Empleado" msprop:Generator_ColumnPropNameInRow="Cod_Empleado" msprop:Generator_ColumnPropNameInTable="Cod_EmpleadoColumn" msprop:Generator_UserColumnName="Cod_Empleado" type="xs:int" />
@@ -613,7 +624,7 @@ WHERE        (Cod_Empleado = ?)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Pedido" msprop:Generator_TableClassName="PedidoDataTable" msprop:Generator_TableVarName="tablePedido" msprop:Generator_RowChangedName="PedidoRowChanged" msprop:Generator_TablePropName="Pedido" msprop:Generator_RowDeletingName="PedidoRowDeleting" msprop:Generator_RowChangingName="PedidoRowChanging" msprop:Generator_RowEvHandlerName="PedidoRowChangeEventHandler" msprop:Generator_RowDeletedName="PedidoRowDeleted" msprop:Generator_RowClassName="PedidoRow" msprop:Generator_UserTableName="Pedido" msprop:Generator_RowEvArgName="PedidoRowChangeEvent">
+        <xs:element name="Pedido" msprop:Generator_TableClassName="PedidoDataTable" msprop:Generator_TableVarName="tablePedido" msprop:Generator_TablePropName="Pedido" msprop:Generator_RowDeletingName="PedidoRowDeleting" msprop:Generator_RowChangingName="PedidoRowChanging" msprop:Generator_RowEvHandlerName="PedidoRowChangeEventHandler" msprop:Generator_RowDeletedName="PedidoRowDeleted" msprop:Generator_UserTableName="Pedido" msprop:Generator_RowChangedName="PedidoRowChanged" msprop:Generator_RowEvArgName="PedidoRowChangeEvent" msprop:Generator_RowClassName="PedidoRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="IdPedido" msprop:Generator_ColumnVarNameInTable="columnIdPedido" msprop:Generator_ColumnPropNameInRow="IdPedido" msprop:Generator_ColumnPropNameInTable="IdPedidoColumn" msprop:Generator_UserColumnName="IdPedido" type="xs:int" />
@@ -623,7 +634,7 @@ WHERE        (Cod_Empleado = ?)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Stock" msprop:Generator_TableClassName="StockDataTable" msprop:Generator_TableVarName="tableStock" msprop:Generator_RowChangedName="StockRowChanged" msprop:Generator_TablePropName="Stock" msprop:Generator_RowDeletingName="StockRowDeleting" msprop:Generator_RowChangingName="StockRowChanging" msprop:Generator_RowEvHandlerName="StockRowChangeEventHandler" msprop:Generator_RowDeletedName="StockRowDeleted" msprop:Generator_RowClassName="StockRow" msprop:Generator_UserTableName="Stock" msprop:Generator_RowEvArgName="StockRowChangeEvent">
+        <xs:element name="Stock" msprop:Generator_TableClassName="StockDataTable" msprop:Generator_TableVarName="tableStock" msprop:Generator_TablePropName="Stock" msprop:Generator_RowDeletingName="StockRowDeleting" msprop:Generator_RowChangingName="StockRowChanging" msprop:Generator_RowEvHandlerName="StockRowChangeEventHandler" msprop:Generator_RowDeletedName="StockRowDeleted" msprop:Generator_UserTableName="Stock" msprop:Generator_RowChangedName="StockRowChanged" msprop:Generator_RowEvArgName="StockRowChangeEvent" msprop:Generator_RowClassName="StockRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="IdTarjeta" msprop:Generator_ColumnVarNameInTable="columnIdTarjeta" msprop:Generator_ColumnPropNameInRow="IdTarjeta" msprop:Generator_ColumnPropNameInTable="IdTarjetaColumn" msprop:Generator_UserColumnName="IdTarjeta" type="xs:int" minOccurs="0" />
@@ -644,7 +655,7 @@ WHERE        (Cod_Empleado = ?)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Ventas" msprop:Generator_TableClassName="VentasDataTable" msprop:Generator_TableVarName="tableVentas" msprop:Generator_RowChangedName="VentasRowChanged" msprop:Generator_TablePropName="Ventas" msprop:Generator_RowDeletingName="VentasRowDeleting" msprop:Generator_RowChangingName="VentasRowChanging" msprop:Generator_RowEvHandlerName="VentasRowChangeEventHandler" msprop:Generator_RowDeletedName="VentasRowDeleted" msprop:Generator_RowClassName="VentasRow" msprop:Generator_UserTableName="Ventas" msprop:Generator_RowEvArgName="VentasRowChangeEvent">
+        <xs:element name="Ventas" msprop:Generator_TableClassName="VentasDataTable" msprop:Generator_TableVarName="tableVentas" msprop:Generator_TablePropName="Ventas" msprop:Generator_RowDeletingName="VentasRowDeleting" msprop:Generator_RowChangingName="VentasRowChanging" msprop:Generator_RowEvHandlerName="VentasRowChangeEventHandler" msprop:Generator_RowDeletedName="VentasRowDeleted" msprop:Generator_UserTableName="Ventas" msprop:Generator_RowChangedName="VentasRowChanged" msprop:Generator_RowEvArgName="VentasRowChangeEvent" msprop:Generator_RowClassName="VentasRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="IdVenta" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnIdVenta" msprop:Generator_ColumnPropNameInRow="IdVenta" msprop:Generator_ColumnPropNameInTable="IdVentaColumn" msprop:Generator_UserColumnName="IdVenta" type="xs:int" />
@@ -695,13 +706,13 @@ WHERE        (Cod_Empleado = ?)</CommandText>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="CatálogoDetalle_pedido" msdata:parent="Catálogo" msdata:child="Detalle_pedido" msdata:parentkey="IdTarjeta" msdata:childkey="IdTarjeta" msprop:Generator_UserChildTable="Detalle_pedido" msprop:Generator_ChildPropName="GetDetalle_pedidoRows" msprop:Generator_UserRelationName="CatálogoDetalle_pedido" msprop:Generator_RelationVarName="relationCatálogoDetalle_pedido" msprop:Generator_UserParentTable="Catálogo" msprop:Generator_ParentPropName="CatálogoRow" />
-      <msdata:Relationship name="PedidoDetalle_pedido" msdata:parent="Pedido" msdata:child="Detalle_pedido" msdata:parentkey="IdPedido" msdata:childkey="IdPedido" msprop:Generator_UserChildTable="Detalle_pedido" msprop:Generator_ChildPropName="GetDetalle_pedidoRows" msprop:Generator_UserRelationName="PedidoDetalle_pedido" msprop:Generator_ParentPropName="PedidoRow" msprop:Generator_RelationVarName="relationPedidoDetalle_pedido" msprop:Generator_UserParentTable="Pedido" />
-      <msdata:Relationship name="CatálogoDetalle_Venta" msdata:parent="Catálogo" msdata:child="Detalle_Venta" msdata:parentkey="IdTarjeta" msdata:childkey="IdTarjeta" msprop:Generator_UserChildTable="Detalle_Venta" msprop:Generator_ChildPropName="GetDetalle_VentaRows" msprop:Generator_UserRelationName="CatálogoDetalle_Venta" msprop:Generator_RelationVarName="relationCatálogoDetalle_Venta" msprop:Generator_UserParentTable="Catálogo" msprop:Generator_ParentPropName="CatálogoRow" />
-      <msdata:Relationship name="VentasDetalle_Venta" msdata:parent="Ventas" msdata:child="Detalle_Venta" msdata:parentkey="IdVenta" msdata:childkey="IdVenta" msprop:Generator_UserChildTable="Detalle_Venta" msprop:Generator_ChildPropName="GetDetalle_VentaRows" msprop:Generator_UserRelationName="VentasDetalle_Venta" msprop:Generator_ParentPropName="VentasRow" msprop:Generator_RelationVarName="relationVentasDetalle_Venta" msprop:Generator_UserParentTable="Ventas" />
-      <msdata:Relationship name="EmpleadoPedido" msdata:parent="Empleado" msdata:child="Pedido" msdata:parentkey="Cod_Empleado" msdata:childkey="Cod_Empleado" msprop:Generator_UserChildTable="Pedido" msprop:Generator_ChildPropName="GetPedidoRows" msprop:Generator_UserRelationName="EmpleadoPedido" msprop:Generator_RelationVarName="relationEmpleadoPedido" msprop:Generator_UserParentTable="Empleado" msprop:Generator_ParentPropName="EmpleadoRow" />
-      <msdata:Relationship name="CatálogoStock" msdata:parent="Catálogo" msdata:child="Stock" msdata:parentkey="IdTarjeta" msdata:childkey="IdTarjeta" msprop:Generator_UserChildTable="Stock" msprop:Generator_ChildPropName="GetStockRows" msprop:Generator_UserRelationName="CatálogoStock" msprop:Generator_RelationVarName="relationCatálogoStock" msprop:Generator_UserParentTable="Catálogo" msprop:Generator_ParentPropName="CatálogoRow" />
-      <msdata:Relationship name="Cliente_x002F_EmpresaVentas" msdata:parent="Cliente_x002F_Empresa" msdata:child="Ventas" msdata:parentkey="IdEmp" msdata:childkey="IdEmp" msprop:Generator_UserChildTable="Ventas" msprop:Generator_ChildPropName="GetVentasRows" msprop:Generator_UserRelationName="Cliente/EmpresaVentas" msprop:Generator_RelationVarName="_relationCliente_EmpresaVentas" msprop:Generator_UserParentTable="Cliente/Empresa" msprop:Generator_ParentPropName="_Cliente_EmpresaRow" />
+      <msdata:Relationship name="CatálogoDetalle_pedido" msdata:parent="Catálogo" msdata:child="Detalle_pedido" msdata:parentkey="IdTarjeta" msdata:childkey="IdTarjeta" msprop:Generator_UserChildTable="Detalle_pedido" msprop:Generator_ChildPropName="GetDetalle_pedidoRows" msprop:Generator_UserRelationName="CatálogoDetalle_pedido" msprop:Generator_ParentPropName="CatálogoRow" msprop:Generator_RelationVarName="relationCatálogoDetalle_pedido" msprop:Generator_UserParentTable="Catálogo" />
+      <msdata:Relationship name="PedidoDetalle_pedido" msdata:parent="Pedido" msdata:child="Detalle_pedido" msdata:parentkey="IdPedido" msdata:childkey="IdPedido" msprop:Generator_UserChildTable="Detalle_pedido" msprop:Generator_ChildPropName="GetDetalle_pedidoRows" msprop:Generator_UserRelationName="PedidoDetalle_pedido" msprop:Generator_RelationVarName="relationPedidoDetalle_pedido" msprop:Generator_UserParentTable="Pedido" msprop:Generator_ParentPropName="PedidoRow" />
+      <msdata:Relationship name="CatálogoDetalle_Venta" msdata:parent="Catálogo" msdata:child="Detalle_Venta" msdata:parentkey="IdTarjeta" msdata:childkey="IdTarjeta" msprop:Generator_UserChildTable="Detalle_Venta" msprop:Generator_ChildPropName="GetDetalle_VentaRows" msprop:Generator_UserRelationName="CatálogoDetalle_Venta" msprop:Generator_ParentPropName="CatálogoRow" msprop:Generator_RelationVarName="relationCatálogoDetalle_Venta" msprop:Generator_UserParentTable="Catálogo" />
+      <msdata:Relationship name="VentasDetalle_Venta" msdata:parent="Ventas" msdata:child="Detalle_Venta" msdata:parentkey="IdVenta" msdata:childkey="IdVenta" msprop:Generator_UserChildTable="Detalle_Venta" msprop:Generator_ChildPropName="GetDetalle_VentaRows" msprop:Generator_UserRelationName="VentasDetalle_Venta" msprop:Generator_RelationVarName="relationVentasDetalle_Venta" msprop:Generator_UserParentTable="Ventas" msprop:Generator_ParentPropName="VentasRow" />
+      <msdata:Relationship name="EmpleadoPedido" msdata:parent="Empleado" msdata:child="Pedido" msdata:parentkey="Cod_Empleado" msdata:childkey="Cod_Empleado" msprop:Generator_UserChildTable="Pedido" msprop:Generator_ChildPropName="GetPedidoRows" msprop:Generator_UserRelationName="EmpleadoPedido" msprop:Generator_ParentPropName="EmpleadoRow" msprop:Generator_RelationVarName="relationEmpleadoPedido" msprop:Generator_UserParentTable="Empleado" />
+      <msdata:Relationship name="CatálogoStock" msdata:parent="Catálogo" msdata:child="Stock" msdata:parentkey="IdTarjeta" msdata:childkey="IdTarjeta" msprop:Generator_UserChildTable="Stock" msprop:Generator_ChildPropName="GetStockRows" msprop:Generator_UserRelationName="CatálogoStock" msprop:Generator_ParentPropName="CatálogoRow" msprop:Generator_RelationVarName="relationCatálogoStock" msprop:Generator_UserParentTable="Catálogo" />
+      <msdata:Relationship name="Cliente_x002F_EmpresaVentas" msdata:parent="Cliente_x002F_Empresa" msdata:child="Ventas" msdata:parentkey="IdEmp" msdata:childkey="IdEmp" msprop:Generator_UserChildTable="Ventas" msprop:Generator_ChildPropName="GetVentasRows" msprop:Generator_UserRelationName="Cliente/EmpresaVentas" msprop:Generator_ParentPropName="_Cliente_EmpresaRow" msprop:Generator_RelationVarName="_relationCliente_EmpresaVentas" msprop:Generator_UserParentTable="Cliente/Empresa" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>
