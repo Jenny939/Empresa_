@@ -28,5 +28,11 @@ namespace SistemaNavideño
         {
             Close();
         }
+
+        private void otroCasoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RVentas r = new RVentas();
+            r.ShowDialog();
+        }
     }
 }
