@@ -11,3 +11,6 @@ D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño
 D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.pdb
 D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.Administracion.resources
 D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.FormEmpleado.resources
+C:\PARCIAL\SistemaNavideño\SistemaNavideño\bin\Debug\SistemaNavideño.exe.config
+C:\PARCIAL\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.exe
+C:\PARCIAL\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.pdb

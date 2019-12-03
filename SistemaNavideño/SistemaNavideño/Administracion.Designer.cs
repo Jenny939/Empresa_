@@ -29,26 +29,34 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+<<<<<<< HEAD
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Administracion));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+=======
+            System.Windows.Forms.Label cod_EmpleadoLabel;
+            System.Windows.Forms.Label cILabel;
+            System.Windows.Forms.Label nombreLabel;
+            System.Windows.Forms.Label apellidoLabel;
+            System.Windows.Forms.Label cargoLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Administracion));
+>>>>>>> c737bf17e48f58e7c72951ccb3854e7e0ed4b72f
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.listaClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.otroCasoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yOtroCasoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.empleadoBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.empleadoBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.empleadoDataGridView = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
@@ -66,6 +74,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.empleadoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tarjetaVentaDataSet = new SistemaNavideño.TarjetaVentaDataSet();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -78,6 +87,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+=======
+            cod_EmpleadoLabel = new System.Windows.Forms.Label();
+            cILabel = new System.Windows.Forms.Label();
+            nombreLabel = new System.Windows.Forms.Label();
+            apellidoLabel = new System.Windows.Forms.Label();
+            cargoLabel = new System.Windows.Forms.Label();
+            this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tarjetaVentaDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empleadoBindingSource)).BeginInit();
+>>>>>>> c737bf17e48f58e7c72951ccb3854e7e0ed4b72f
             ((System.ComponentModel.ISupportInitialize)(this.empleadoBindingNavigator)).BeginInit();
             this.empleadoBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.empleadoDataGridView)).BeginInit();
@@ -85,16 +104,60 @@
             ((System.ComponentModel.ISupportInitialize)(this.tarjetaVentaDataSet)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // cod_EmpleadoLabel
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(559, 19);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1007, 751);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            cod_EmpleadoLabel.AutoSize = true;
+            cod_EmpleadoLabel.BackColor = System.Drawing.Color.Transparent;
+            cod_EmpleadoLabel.Location = new System.Drawing.Point(40, 112);
+            cod_EmpleadoLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            cod_EmpleadoLabel.Name = "cod_EmpleadoLabel";
+            cod_EmpleadoLabel.Size = new System.Drawing.Size(131, 21);
+            cod_EmpleadoLabel.TabIndex = 15;
+            cod_EmpleadoLabel.Text = "Cod Empleado:";
+            // 
+            // cILabel
+            // 
+            cILabel.AutoSize = true;
+            cILabel.BackColor = System.Drawing.Color.Transparent;
+            cILabel.Location = new System.Drawing.Point(136, 154);
+            cILabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            cILabel.Name = "cILabel";
+            cILabel.Size = new System.Drawing.Size(37, 21);
+            cILabel.TabIndex = 16;
+            cILabel.Text = "CI:";
+            // 
+            // nombreLabel
+            // 
+            nombreLabel.AutoSize = true;
+            nombreLabel.BackColor = System.Drawing.Color.Transparent;
+            nombreLabel.Location = new System.Drawing.Point(83, 212);
+            nombreLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            nombreLabel.Name = "nombreLabel";
+            nombreLabel.Size = new System.Drawing.Size(79, 21);
+            nombreLabel.TabIndex = 17;
+            nombreLabel.Text = "Nombre:";
+            // 
+            // apellidoLabel
+            // 
+            apellidoLabel.AutoSize = true;
+            apellidoLabel.BackColor = System.Drawing.Color.Transparent;
+            apellidoLabel.Location = new System.Drawing.Point(86, 272);
+            apellidoLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            apellidoLabel.Name = "apellidoLabel";
+            apellidoLabel.Size = new System.Drawing.Size(79, 21);
+            apellidoLabel.TabIndex = 18;
+            apellidoLabel.Text = "Apellido:";
+            // 
+            // cargoLabel
+            // 
+            cargoLabel.AutoSize = true;
+            cargoLabel.BackColor = System.Drawing.Color.Transparent;
+            cargoLabel.Location = new System.Drawing.Point(103, 329);
+            cargoLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            cargoLabel.Name = "cargoLabel";
+            cargoLabel.Size = new System.Drawing.Size(63, 21);
+            cargoLabel.TabIndex = 19;
+            cargoLabel.Text = "Cargo:";
             // 
             // menuStrip1
             // 
@@ -106,7 +169,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(11, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(998, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(985, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -128,17 +191,6 @@
             this.yOtroCasoToolStripMenuItem.Name = "yOtroCasoToolStripMenuItem";
             this.yOtroCasoToolStripMenuItem.Size = new System.Drawing.Size(116, 18);
             this.yOtroCasoToolStripMenuItem.Text = "Verificar Stock";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(149, 160);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(330, 317);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
             // 
             // button2
             // 
@@ -180,9 +232,34 @@
             this.empleadoBindingNavigator.Name = "empleadoBindingNavigator";
             this.empleadoBindingNavigator.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.empleadoBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.empleadoBindingNavigator.Size = new System.Drawing.Size(998, 25);
+            this.empleadoBindingNavigator.Size = new System.Drawing.Size(985, 25);
             this.empleadoBindingNavigator.TabIndex = 14;
             this.empleadoBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -216,16 +293,9 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -248,26 +318,8 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
             // empleadoBindingNavigatorSaveItem
             // 
@@ -299,6 +351,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(339, 67);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
@@ -307,6 +360,7 @@
             this.label1.Text = "REGISTRO DE EMPLEADOS";
             this.label1.Visible = false;
             // 
+<<<<<<< HEAD
             // cod_EmpleadoLabel
             // 
             this.cod_EmpleadoLabel.AutoSize = true;
@@ -318,6 +372,8 @@
             this.cod_EmpleadoLabel.Text = "Cod Empleado:";
             this.cod_EmpleadoLabel.Visible = false;
             // 
+=======
+>>>>>>> c737bf17e48f58e7c72951ccb3854e7e0ed4b72f
             // cod_EmpleadoTextBox
             // 
             this.cod_EmpleadoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empleadoBindingSource, "Cod_Empleado", true));
@@ -328,6 +384,7 @@
             this.cod_EmpleadoTextBox.TabIndex = 16;
             this.cod_EmpleadoTextBox.Visible = false;
             // 
+<<<<<<< HEAD
             // cILabel
             // 
             this.cILabel.AutoSize = true;
@@ -339,6 +396,8 @@
             this.cILabel.Text = "CI:";
             this.cILabel.Visible = false;
             // 
+=======
+>>>>>>> c737bf17e48f58e7c72951ccb3854e7e0ed4b72f
             // cITextBox
             // 
             this.cITextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empleadoBindingSource, "CI", true));
@@ -349,6 +408,7 @@
             this.cITextBox.TabIndex = 17;
             this.cITextBox.Visible = false;
             // 
+<<<<<<< HEAD
             // nombreLabel
             // 
             this.nombreLabel.AutoSize = true;
@@ -360,6 +420,8 @@
             this.nombreLabel.Text = "Nombre:";
             this.nombreLabel.Visible = false;
             // 
+=======
+>>>>>>> c737bf17e48f58e7c72951ccb3854e7e0ed4b72f
             // nombreTextBox
             // 
             this.nombreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empleadoBindingSource, "Nombre", true));
@@ -370,6 +432,7 @@
             this.nombreTextBox.TabIndex = 18;
             this.nombreTextBox.Visible = false;
             // 
+<<<<<<< HEAD
             // apellidoLabel
             // 
             this.apellidoLabel.AutoSize = true;
@@ -381,6 +444,8 @@
             this.apellidoLabel.Text = "Apellido:";
             this.apellidoLabel.Visible = false;
             // 
+=======
+>>>>>>> c737bf17e48f58e7c72951ccb3854e7e0ed4b72f
             // apellidoTextBox
             // 
             this.apellidoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empleadoBindingSource, "Apellido", true));
@@ -391,6 +456,7 @@
             this.apellidoTextBox.TabIndex = 19;
             this.apellidoTextBox.Visible = false;
             // 
+<<<<<<< HEAD
             // cargoLabel
             // 
             this.cargoLabel.AutoSize = true;
@@ -402,6 +468,8 @@
             this.cargoLabel.Text = "Cargo:";
             this.cargoLabel.Visible = false;
             // 
+=======
+>>>>>>> c737bf17e48f58e7c72951ccb3854e7e0ed4b72f
             // cargoTextBox
             // 
             this.cargoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empleadoBindingSource, "Cargo", true));
@@ -517,8 +585,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(998, 503);
+            this.ClientSize = new System.Drawing.Size(985, 485);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -537,18 +606,20 @@
             this.Controls.Add(this.empleadoDataGridView);
             this.Controls.Add(this.empleadoBindingNavigator);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "Administracion";
             this.Text = "Adminsitración";
             this.Load += new System.EventHandler(this.Administracion_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.tarjetaVentaDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empleadoBindingSource)).EndInit();
+>>>>>>> c737bf17e48f58e7c72951ccb3854e7e0ed4b72f
             ((System.ComponentModel.ISupportInitialize)(this.empleadoBindingNavigator)).EndInit();
             this.empleadoBindingNavigator.ResumeLayout(false);
             this.empleadoBindingNavigator.PerformLayout();
@@ -562,12 +633,10 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem listaClientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem otroCasoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem yOtroCasoToolStripMenuItem;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button2;
         private TarjetaVentaDataSet tarjetaVentaDataSet;
         private System.Windows.Forms.BindingSource empleadoBindingSource;
