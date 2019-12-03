@@ -50,12 +50,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Administracion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Administracion.Designer.cs">
-      <DependentUpon>Administracion.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,12 +63,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TarjetaVentaDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Venta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta.Designer.cs">
+      <DependentUpon>Venta.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Administracion.resx">
-      <DependentUpon>Administracion.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEmpleado.resx">
       <DependentUpon>FormEmpleado.cs</DependentUpon>
@@ -88,6 +84,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Venta.resx">
+      <DependentUpon>Venta.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
