@@ -14,3 +14,13 @@ D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño
 C:\PARCIAL\SistemaNavideño\SistemaNavideño\bin\Debug\SistemaNavideño.exe.config
 C:\PARCIAL\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.exe
 C:\PARCIAL\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.pdb
+C:\PARCIAL\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.csprojResolveAssemblyReference.cache
+C:\PARCIAL\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.Empresas.resources
+C:\PARCIAL\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.Form1.resources
+C:\PARCIAL\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.Administracion.resources
+C:\PARCIAL\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.FormEmpleado.resources
+C:\PARCIAL\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.Properties.Resources.resources
+C:\PARCIAL\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.csproj.GenerateResource.Cache
+C:\PARCIAL\SistemaNavideño\SistemaNavideño\bin\Debug\TarjetaVenta.mdb
+C:\PARCIAL\SistemaNavideño\SistemaNavideño\bin\Debug\SistemaNavideño.exe
+C:\PARCIAL\SistemaNavideño\SistemaNavideño\bin\Debug\SistemaNavideño.pdb

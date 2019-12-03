@@ -19,7 +19,7 @@ namespace SistemaNavideño
 
         private void listaClientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            textBox1.Visible = false;
+            //textBox1.Visible = false;
         }
 
         private void empleadoBindingNavigatorSaveItem_Click(object sender, EventArgs e)
