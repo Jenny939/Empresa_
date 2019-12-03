@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SistemaNavideño
 {
-    public partial class Form2 : Form
+    public partial class Administracion : Form
     {
-        public Form2()
+        public Administracion()
         {
             InitializeComponent();
         }

@@ -21,5 +21,23 @@ namespace SistemaNavideño
         {
             Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "AdminTarjetas" && textBox2.Text == "navidad")
+            {
+                Administracion adm= new Administracion();
+                adm.ShowDialog();
+            }
+            else if (textBox1.Text == "EmpTarjetas" && textBox2.Text == "tarjetas")
+            {
+                FormEmpleado femp = new FormEmpleado();
+                femp.showDialog();
+            }
+            else
+            {
+                MessageBox.Show("Error en el usuario o contraseña");
+            }
+        }
     }
 }
