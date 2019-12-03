@@ -34,5 +34,11 @@ namespace SistemaNavideño
             RVentas r = new RVentas();
             r.ShowDialog();
         }
+
+        private void listaClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormStock fs = new FormStock();
+            fs.ShowDialog();
+        }
     }
 }

@@ -98,6 +98,7 @@
             this.listaClientesToolStripMenuItem.Name = "listaClientesToolStripMenuItem";
             this.listaClientesToolStripMenuItem.Size = new System.Drawing.Size(116, 20);
             this.listaClientesToolStripMenuItem.Text = "Verificar Stock";
+            this.listaClientesToolStripMenuItem.Click += new System.EventHandler(this.listaClientesToolStripMenuItem_Click);
             // 
             // reporteDeGananciasToolStripMenuItem
             // 
