@@ -1,6 +1,6 @@
 ﻿namespace SistemaNavideño
 {
-    partial class Administracion
+    partial class FormGEmpleados
     {
         /// <summary>
         /// Required designer variable.
@@ -29,33 +29,29 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGEmpleados));
             System.Windows.Forms.Label cod_EmpleadoLabel;
             System.Windows.Forms.Label cILabel;
             System.Windows.Forms.Label nombreLabel;
             System.Windows.Forms.Label apellidoLabel;
             System.Windows.Forms.Label cargoLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Administracion));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.listaClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.otroCasoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.yOtroCasoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button2 = new System.Windows.Forms.Button();
             this.tarjetaVentaDataSet = new SistemaNavideño.TarjetaVentaDataSet();
             this.empleadoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.empleadoTableAdapter = new SistemaNavideño.TarjetaVentaDataSetTableAdapters.EmpleadoTableAdapter();
             this.tableAdapterManager = new SistemaNavideño.TarjetaVentaDataSetTableAdapters.TableAdapterManager();
             this.empleadoBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.empleadoBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.empleadoDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -78,7 +74,6 @@
             nombreLabel = new System.Windows.Forms.Label();
             apellidoLabel = new System.Windows.Forms.Label();
             cargoLabel = new System.Windows.Forms.Label();
-            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tarjetaVentaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.empleadoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.empleadoBindingNavigator)).BeginInit();
@@ -86,106 +81,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.empleadoDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // cod_EmpleadoLabel
-            // 
-            cod_EmpleadoLabel.AutoSize = true;
-            cod_EmpleadoLabel.BackColor = System.Drawing.Color.Transparent;
-            cod_EmpleadoLabel.Location = new System.Drawing.Point(40, 112);
-            cod_EmpleadoLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            cod_EmpleadoLabel.Name = "cod_EmpleadoLabel";
-            cod_EmpleadoLabel.Size = new System.Drawing.Size(131, 21);
-            cod_EmpleadoLabel.TabIndex = 15;
-            cod_EmpleadoLabel.Text = "Cod Empleado:";
-            // 
-            // cILabel
-            // 
-            cILabel.AutoSize = true;
-            cILabel.BackColor = System.Drawing.Color.Transparent;
-            cILabel.Location = new System.Drawing.Point(136, 154);
-            cILabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            cILabel.Name = "cILabel";
-            cILabel.Size = new System.Drawing.Size(37, 21);
-            cILabel.TabIndex = 16;
-            cILabel.Text = "CI:";
-            // 
-            // nombreLabel
-            // 
-            nombreLabel.AutoSize = true;
-            nombreLabel.BackColor = System.Drawing.Color.Transparent;
-            nombreLabel.Location = new System.Drawing.Point(83, 212);
-            nombreLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            nombreLabel.Name = "nombreLabel";
-            nombreLabel.Size = new System.Drawing.Size(79, 21);
-            nombreLabel.TabIndex = 17;
-            nombreLabel.Text = "Nombre:";
-            // 
-            // apellidoLabel
-            // 
-            apellidoLabel.AutoSize = true;
-            apellidoLabel.BackColor = System.Drawing.Color.Transparent;
-            apellidoLabel.Location = new System.Drawing.Point(86, 272);
-            apellidoLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            apellidoLabel.Name = "apellidoLabel";
-            apellidoLabel.Size = new System.Drawing.Size(79, 21);
-            apellidoLabel.TabIndex = 18;
-            apellidoLabel.Text = "Apellido:";
-            // 
-            // cargoLabel
-            // 
-            cargoLabel.AutoSize = true;
-            cargoLabel.BackColor = System.Drawing.Color.Transparent;
-            cargoLabel.Location = new System.Drawing.Point(103, 329);
-            cargoLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            cargoLabel.Name = "cargoLabel";
-            cargoLabel.Size = new System.Drawing.Size(63, 21);
-            cargoLabel.TabIndex = 19;
-            cargoLabel.Text = "Cargo:";
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.listaClientesToolStripMenuItem,
-            this.otroCasoToolStripMenuItem,
-            this.yOtroCasoToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(11, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(985, 24);
-            this.menuStrip1.TabIndex = 2;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // listaClientesToolStripMenuItem
-            // 
-            this.listaClientesToolStripMenuItem.Name = "listaClientesToolStripMenuItem";
-            this.listaClientesToolStripMenuItem.Size = new System.Drawing.Size(158, 18);
-            this.listaClientesToolStripMenuItem.Text = "Gestionar Empleados";
-            this.listaClientesToolStripMenuItem.Click += new System.EventHandler(this.listaClientesToolStripMenuItem_Click);
-            // 
-            // otroCasoToolStripMenuItem
-            // 
-            this.otroCasoToolStripMenuItem.Name = "otroCasoToolStripMenuItem";
-            this.otroCasoToolStripMenuItem.Size = new System.Drawing.Size(177, 18);
-            this.otroCasoToolStripMenuItem.Text = "Generar Reporte Ventas";
-            // 
-            // yOtroCasoToolStripMenuItem
-            // 
-            this.yOtroCasoToolStripMenuItem.Name = "yOtroCasoToolStripMenuItem";
-            this.yOtroCasoToolStripMenuItem.Size = new System.Drawing.Size(116, 18);
-            this.yOtroCasoToolStripMenuItem.Text = "Verificar Stock";
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Goldenrod;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button2.Location = new System.Drawing.Point(1199, 588);
-            this.button2.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.button2.Location = new System.Drawing.Point(643, 312);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(293, 71);
+            this.button2.Size = new System.Drawing.Size(160, 44);
             this.button2.TabIndex = 13;
             this.button2.Text = "SALIR";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // tarjetaVentaDataSet
             // 
@@ -233,42 +140,16 @@
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
             this.empleadoBindingNavigatorSaveItem});
-            this.empleadoBindingNavigator.Location = new System.Drawing.Point(0, 24);
+            this.empleadoBindingNavigator.Location = new System.Drawing.Point(0, 0);
             this.empleadoBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.empleadoBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.empleadoBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.empleadoBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.empleadoBindingNavigator.Name = "empleadoBindingNavigator";
-            this.empleadoBindingNavigator.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.empleadoBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.empleadoBindingNavigator.Size = new System.Drawing.Size(985, 25);
+            this.empleadoBindingNavigator.Size = new System.Drawing.Size(836, 25);
             this.empleadoBindingNavigator.TabIndex = 14;
             this.empleadoBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -298,14 +179,21 @@
             this.bindingNavigatorPositionItem.AccessibleName = "Posición";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(88, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
             // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 15);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
+            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -313,7 +201,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
             this.bindingNavigatorMoveNextItem.Text = "Mover siguiente";
             // 
             // bindingNavigatorMoveLastItem
@@ -322,20 +210,38 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
             this.bindingNavigatorMoveLastItem.Text = "Mover último";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
             // empleadoBindingNavigatorSaveItem
             // 
             this.empleadoBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.empleadoBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("empleadoBindingNavigatorSaveItem.Image")));
             this.empleadoBindingNavigatorSaveItem.Name = "empleadoBindingNavigatorSaveItem";
-            this.empleadoBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
+            this.empleadoBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
             this.empleadoBindingNavigatorSaveItem.Text = "Guardar datos";
             this.empleadoBindingNavigatorSaveItem.Click += new System.EventHandler(this.empleadoBindingNavigatorSaveItem_Click);
             // 
@@ -350,10 +256,9 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
             this.empleadoDataGridView.DataSource = this.empleadoBindingSource;
-            this.empleadoDataGridView.Location = new System.Drawing.Point(406, 107);
-            this.empleadoDataGridView.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.empleadoDataGridView.Location = new System.Drawing.Point(260, 70);
             this.empleadoDataGridView.Name = "empleadoDataGridView";
-            this.empleadoDataGridView.Size = new System.Drawing.Size(543, 355);
+            this.empleadoDataGridView.Size = new System.Drawing.Size(543, 220);
             this.empleadoDataGridView.TabIndex = 14;
             // 
             // dataGridViewTextBoxColumn1
@@ -389,102 +294,142 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(339, 67);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Location = new System.Drawing.Point(342, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(278, 21);
+            this.label1.Size = new System.Drawing.Size(150, 13);
             this.label1.TabIndex = 15;
             this.label1.Text = "REGISTRO DE EMPLEADOS";
+            // 
+            // cod_EmpleadoLabel
+            // 
+            cod_EmpleadoLabel.AutoSize = true;
+            cod_EmpleadoLabel.Location = new System.Drawing.Point(31, 73);
+            cod_EmpleadoLabel.Name = "cod_EmpleadoLabel";
+            cod_EmpleadoLabel.Size = new System.Drawing.Size(79, 13);
+            cod_EmpleadoLabel.TabIndex = 15;
+            cod_EmpleadoLabel.Text = "Cod Empleado:";
             // 
             // cod_EmpleadoTextBox
             // 
             this.cod_EmpleadoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empleadoBindingSource, "Cod_Empleado", true));
-            this.cod_EmpleadoTextBox.Location = new System.Drawing.Point(183, 107);
-            this.cod_EmpleadoTextBox.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.cod_EmpleadoTextBox.Location = new System.Drawing.Point(116, 70);
             this.cod_EmpleadoTextBox.Name = "cod_EmpleadoTextBox";
-            this.cod_EmpleadoTextBox.Size = new System.Drawing.Size(180, 28);
+            this.cod_EmpleadoTextBox.Size = new System.Drawing.Size(100, 20);
             this.cod_EmpleadoTextBox.TabIndex = 16;
+            // 
+            // cILabel
+            // 
+            cILabel.AutoSize = true;
+            cILabel.Location = new System.Drawing.Point(90, 110);
+            cILabel.Name = "cILabel";
+            cILabel.Size = new System.Drawing.Size(20, 13);
+            cILabel.TabIndex = 16;
+            cILabel.Text = "CI:";
             // 
             // cITextBox
             // 
             this.cITextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empleadoBindingSource, "CI", true));
-            this.cITextBox.Location = new System.Drawing.Point(183, 149);
-            this.cITextBox.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.cITextBox.Location = new System.Drawing.Point(116, 107);
             this.cITextBox.Name = "cITextBox";
-            this.cITextBox.Size = new System.Drawing.Size(180, 28);
+            this.cITextBox.Size = new System.Drawing.Size(100, 20);
             this.cITextBox.TabIndex = 17;
+            // 
+            // nombreLabel
+            // 
+            nombreLabel.AutoSize = true;
+            nombreLabel.Location = new System.Drawing.Point(63, 147);
+            nombreLabel.Name = "nombreLabel";
+            nombreLabel.Size = new System.Drawing.Size(47, 13);
+            nombreLabel.TabIndex = 17;
+            nombreLabel.Text = "Nombre:";
             // 
             // nombreTextBox
             // 
             this.nombreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empleadoBindingSource, "Nombre", true));
-            this.nombreTextBox.Location = new System.Drawing.Point(182, 206);
-            this.nombreTextBox.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.nombreTextBox.Location = new System.Drawing.Point(116, 144);
             this.nombreTextBox.Name = "nombreTextBox";
-            this.nombreTextBox.Size = new System.Drawing.Size(180, 28);
+            this.nombreTextBox.Size = new System.Drawing.Size(100, 20);
             this.nombreTextBox.TabIndex = 18;
+            // 
+            // apellidoLabel
+            // 
+            apellidoLabel.AutoSize = true;
+            apellidoLabel.Location = new System.Drawing.Point(63, 183);
+            apellidoLabel.Name = "apellidoLabel";
+            apellidoLabel.Size = new System.Drawing.Size(47, 13);
+            apellidoLabel.TabIndex = 18;
+            apellidoLabel.Text = "Apellido:";
             // 
             // apellidoTextBox
             // 
             this.apellidoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empleadoBindingSource, "Apellido", true));
-            this.apellidoTextBox.Location = new System.Drawing.Point(182, 267);
-            this.apellidoTextBox.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.apellidoTextBox.Location = new System.Drawing.Point(116, 180);
             this.apellidoTextBox.Name = "apellidoTextBox";
-            this.apellidoTextBox.Size = new System.Drawing.Size(180, 28);
+            this.apellidoTextBox.Size = new System.Drawing.Size(100, 20);
             this.apellidoTextBox.TabIndex = 19;
+            // 
+            // cargoLabel
+            // 
+            cargoLabel.AutoSize = true;
+            cargoLabel.Location = new System.Drawing.Point(72, 218);
+            cargoLabel.Name = "cargoLabel";
+            cargoLabel.Size = new System.Drawing.Size(38, 13);
+            cargoLabel.TabIndex = 19;
+            cargoLabel.Text = "Cargo:";
             // 
             // cargoTextBox
             // 
             this.cargoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empleadoBindingSource, "Cargo", true));
-            this.cargoTextBox.Location = new System.Drawing.Point(182, 324);
-            this.cargoTextBox.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.cargoTextBox.Location = new System.Drawing.Point(116, 215);
             this.cargoTextBox.Name = "cargoTextBox";
-            this.cargoTextBox.Size = new System.Drawing.Size(180, 28);
+            this.cargoTextBox.Size = new System.Drawing.Size(100, 20);
             this.cargoTextBox.TabIndex = 20;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(64, 383);
+            this.button1.Location = new System.Drawing.Point(34, 262);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 32);
+            this.button1.Size = new System.Drawing.Size(88, 32);
             this.button1.TabIndex = 21;
             this.button1.Text = "NUEVO";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(238, 383);
+            this.button3.Location = new System.Drawing.Point(141, 261);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(147, 32);
+            this.button3.Size = new System.Drawing.Size(87, 34);
             this.button3.TabIndex = 22;
             this.button3.Text = "REGISTRAR";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(64, 430);
+            this.button4.Location = new System.Drawing.Point(33, 301);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(147, 32);
+            this.button4.Size = new System.Drawing.Size(89, 34);
             this.button4.TabIndex = 23;
             this.button4.Text = "MODIFICAR";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(238, 430);
+            this.button5.Location = new System.Drawing.Point(141, 301);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(147, 32);
+            this.button5.Size = new System.Drawing.Size(87, 34);
             this.button5.TabIndex = 24;
             this.button5.Text = "ELIMINAR";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // Administracion
+            // FormGEmpleados
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(985, 485);
+            this.ClientSize = new System.Drawing.Size(836, 369);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -503,14 +448,9 @@
             this.Controls.Add(this.empleadoDataGridView);
             this.Controls.Add(this.empleadoBindingNavigator);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.menuStrip1);
-            this.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.Name = "Administracion";
-            this.Text = "Adminsitración";
-            this.Load += new System.EventHandler(this.Administracion_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.Name = "FormGEmpleados";
+            this.Text = "FormGEmpleados";
+            this.Load += new System.EventHandler(this.FormGEmpleados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tarjetaVentaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.empleadoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.empleadoBindingNavigator)).EndInit();
@@ -524,10 +464,6 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem listaClientesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem otroCasoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem yOtroCasoToolStripMenuItem;
         private System.Windows.Forms.Button button2;
         private TarjetaVentaDataSet tarjetaVentaDataSet;
         private System.Windows.Forms.BindingSource empleadoBindingSource;
