@@ -47,6 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Catalogos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos.Designer.cs">
+      <DependentUpon>Catalogos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empresas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empresas.Designer.cs">
+      <DependentUpon>Empresas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +103,12 @@
     <Compile Include="Venta.Designer.cs">
       <DependentUpon>Venta.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Catalogos.resx">
+      <DependentUpon>Catalogos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empresas.resx">
+      <DependentUpon>Empresas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

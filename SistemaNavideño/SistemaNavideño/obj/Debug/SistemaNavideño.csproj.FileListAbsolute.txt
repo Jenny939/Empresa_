@@ -29,6 +29,18 @@ E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavi
 C:\PARCIAL\SistemaNavideño\SistemaNavideño\bin\Debug\SistemaNavideño.exe.config
 C:\PARCIAL\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.exe
 C:\PARCIAL\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.pdb
+<<<<<<< HEAD
+C:\PARCIAL\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.csprojResolveAssemblyReference.cache
+C:\PARCIAL\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.Empresas.resources
+C:\PARCIAL\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.Form1.resources
+C:\PARCIAL\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.Administracion.resources
+C:\PARCIAL\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.FormEmpleado.resources
+C:\PARCIAL\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.Properties.Resources.resources
+C:\PARCIAL\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.csproj.GenerateResource.Cache
+C:\PARCIAL\SistemaNavideño\SistemaNavideño\bin\Debug\TarjetaVenta.mdb
+C:\PARCIAL\SistemaNavideño\SistemaNavideño\bin\Debug\SistemaNavideño.exe
+C:\PARCIAL\SistemaNavideño\SistemaNavideño\bin\Debug\SistemaNavideño.pdb
+=======
 >>>>>>> f42cfbf7b55746f152766c28e50944554a1ceb06
 D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.Venta.resources
 D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.FormGEmpleados.resources
@@ -43,6 +55,10 @@ E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavi
 E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\bin\Debug\TarjetaVentaDataSet.xss
 E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.FormGEmpleados.resources
 E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.FormGerente.resources
+<<<<<<< HEAD
 D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.RVentas.resources
 D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\RdlCompile.cache
 D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\RdlCompile.compiled
+=======
+>>>>>>> 20b3396886ac50e5e9dbf67f6a5eb10db1e77923
+>>>>>>> 05900035534a37bc494dcbafd4c7c9bd32aabca7
