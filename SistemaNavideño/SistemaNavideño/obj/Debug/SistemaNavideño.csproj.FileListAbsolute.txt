@@ -11,3 +11,16 @@ D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño
 D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.pdb
 D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.Administracion.resources
 D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.FormEmpleado.resources
+E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\bin\Debug\SistemaNavideño.exe.config
+E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.exe
+E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.pdb
+E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\bin\Debug\TarjetaVenta.mdb
+E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\bin\Debug\SistemaNavideño.exe
+E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\bin\Debug\SistemaNavideño.pdb
+E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.csprojResolveAssemblyReference.cache
+E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.Form1.resources
+E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.Administracion.resources
+E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.FormEmpleado.resources
+E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.Properties.Resources.resources
+E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.csproj.GenerateResource.Cache
+E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.Venta.resources

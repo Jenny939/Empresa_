@@ -24,6 +24,8 @@ namespace SistemaNavideño
 
         private void otroCasoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Venta v = new Venta();
+            v.ShowDialog();
 
         }
     }
