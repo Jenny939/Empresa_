@@ -37,3 +37,9 @@ D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño
 D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\bin\Debug\TarjetaVentaDataSet.xsc
 D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\bin\Debug\TarjetaVentaDataSet.xsd
 D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\bin\Debug\TarjetaVentaDataSet.xss
+E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\bin\Debug\TarjetaVentaDataSet.Designer.cs
+E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\bin\Debug\TarjetaVentaDataSet.xsc
+E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\bin\Debug\TarjetaVentaDataSet.xsd
+E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\bin\Debug\TarjetaVentaDataSet.xss
+E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.FormGEmpleados.resources
+E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.FormGerente.resources

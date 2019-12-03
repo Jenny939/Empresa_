@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Venta));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -46,38 +43,36 @@
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.tarjetaVentaDataSet = new SistemaNavideño.TarjetaVentaDataSet();
             this.clienteEmpresaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cliente_EmpresaTableAdapter = new SistemaNavideño.TarjetaVentaDataSetTableAdapters.Cliente_EmpresaTableAdapter();
+            this.tarjetaVentaDataSet = new SistemaNavideño.TarjetaVentaDataSet();
             this.catálogoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cliente_EmpresaTableAdapter = new SistemaNavideño.TarjetaVentaDataSetTableAdapters.Cliente_EmpresaTableAdapter();
             this.catálogoTableAdapter = new SistemaNavideño.TarjetaVentaDataSetTableAdapters.CatálogoTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tarjetaVentaDataSet)).BeginInit();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.detalle_VentaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.detalle_VentaTableAdapter = new SistemaNavideño.TarjetaVentaDataSetTableAdapters.Detalle_VentaTableAdapter();
+            this.tableAdapterManager = new SistemaNavideño.TarjetaVentaDataSetTableAdapters.TableAdapterManager();
+            this.detalle_VentaDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ventasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ventasTableAdapter = new SistemaNavideño.TarjetaVentaDataSetTableAdapters.VentasTableAdapter();
+            this.ventasDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.clienteEmpresaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tarjetaVentaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.catálogoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detalle_VentaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detalle_VentaDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ventasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ventasDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(429, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(207, 151);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(429, 140);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(207, 160);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
             // 
             // textBox1
             // 
@@ -92,6 +87,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 3;
+            this.textBox2.Text = "0";
             // 
             // textBox3
             // 
@@ -171,7 +167,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(44, 217);
+            this.label7.Location = new System.Drawing.Point(47, 214);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(46, 13);
             this.label7.TabIndex = 15;
@@ -196,58 +192,161 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // comboBox1
+            // clienteEmpresaBindingSource
             // 
-            this.comboBox1.DataSource = this.clienteEmpresaBindingSource;
-            this.comboBox1.DisplayMember = "IdEmp";
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(269, 42);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 21);
-            this.comboBox1.TabIndex = 18;
-            this.comboBox1.ValueMember = "IdEmp";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.DataSource = this.catálogoBindingSource;
-            this.comboBox2.DisplayMember = "IdTarjeta";
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(99, 187);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(100, 21);
-            this.comboBox2.TabIndex = 19;
-            this.comboBox2.ValueMember = "IdTarjeta";
+            this.clienteEmpresaBindingSource.DataMember = "Cliente/Empresa";
+            this.clienteEmpresaBindingSource.DataSource = this.tarjetaVentaDataSet;
             // 
             // tarjetaVentaDataSet
             // 
             this.tarjetaVentaDataSet.DataSetName = "TarjetaVentaDataSet";
             this.tarjetaVentaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // clienteEmpresaBindingSource
-            // 
-            this.clienteEmpresaBindingSource.DataMember = "Cliente/Empresa";
-            this.clienteEmpresaBindingSource.DataSource = this.tarjetaVentaDataSet;
-            // 
-            // cliente_EmpresaTableAdapter
-            // 
-            this.cliente_EmpresaTableAdapter.ClearBeforeFill = true;
-            // 
             // catálogoBindingSource
             // 
             this.catálogoBindingSource.DataMember = "Catálogo";
             this.catálogoBindingSource.DataSource = this.tarjetaVentaDataSet;
             // 
+            // cliente_EmpresaTableAdapter
+            // 
+            this.cliente_EmpresaTableAdapter.ClearBeforeFill = true;
+            // 
             // catálogoTableAdapter
             // 
             this.catálogoTableAdapter.ClearBeforeFill = true;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(269, 43);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 18;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(99, 187);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 19;
+            // 
+            // detalle_VentaBindingSource
+            // 
+            this.detalle_VentaBindingSource.DataMember = "Detalle_Venta";
+            this.detalle_VentaBindingSource.DataSource = this.tarjetaVentaDataSet;
+            // 
+            // detalle_VentaTableAdapter
+            // 
+            this.detalle_VentaTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.CatálogoTableAdapter = this.catálogoTableAdapter;
+            this.tableAdapterManager.Cliente_EmpresaTableAdapter = this.cliente_EmpresaTableAdapter;
+            this.tableAdapterManager.Detalle_pedidoTableAdapter = null;
+            this.tableAdapterManager.Detalle_VentaTableAdapter = this.detalle_VentaTableAdapter;
+            this.tableAdapterManager.EmpleadoTableAdapter = null;
+            this.tableAdapterManager.PedidoTableAdapter = null;
+            this.tableAdapterManager.StockTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = SistemaNavideño.TarjetaVentaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.VentasTableAdapter = this.ventasTableAdapter;
+            // 
+            // detalle_VentaDataGridView
+            // 
+            this.detalle_VentaDataGridView.AutoGenerateColumns = false;
+            this.detalle_VentaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.detalle_VentaDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4});
+            this.detalle_VentaDataGridView.DataSource = this.detalle_VentaBindingSource;
+            this.detalle_VentaDataGridView.Location = new System.Drawing.Point(344, 174);
+            this.detalle_VentaDataGridView.Name = "detalle_VentaDataGridView";
+            this.detalle_VentaDataGridView.Size = new System.Drawing.Size(387, 99);
+            this.detalle_VentaDataGridView.TabIndex = 19;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "IdVenta";
+            this.dataGridViewTextBoxColumn1.HeaderText = "IdVenta";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "IdTarjeta";
+            this.dataGridViewTextBoxColumn2.HeaderText = "IdTarjeta";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Cantidad";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Cantidad";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "SubTotal";
+            this.dataGridViewTextBoxColumn4.HeaderText = "SubTotal";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // ventasBindingSource
+            // 
+            this.ventasBindingSource.DataMember = "Ventas";
+            this.ventasBindingSource.DataSource = this.tarjetaVentaDataSet;
+            // 
+            // ventasTableAdapter
+            // 
+            this.ventasTableAdapter.ClearBeforeFill = true;
+            // 
+            // ventasDataGridView
+            // 
+            this.ventasDataGridView.AutoGenerateColumns = false;
+            this.ventasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ventasDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8});
+            this.ventasDataGridView.DataSource = this.ventasBindingSource;
+            this.ventasDataGridView.Location = new System.Drawing.Point(387, 39);
+            this.ventasDataGridView.Name = "ventasDataGridView";
+            this.ventasDataGridView.Size = new System.Drawing.Size(344, 112);
+            this.ventasDataGridView.TabIndex = 19;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "IdVenta";
+            this.dataGridViewTextBoxColumn5.HeaderText = "IdVenta";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "IdEmp";
+            this.dataGridViewTextBoxColumn6.HeaderText = "IdEmp";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Total";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Total";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Fecha";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Fecha";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             // 
             // Venta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(636, 312);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(741, 296);
+            this.Controls.Add(this.ventasDataGridView);
+            this.Controls.Add(this.detalle_VentaDataGridView);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
@@ -262,16 +361,16 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
             this.Name = "Venta";
             this.Text = "Venta";
             this.Load += new System.EventHandler(this.Venta_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tarjetaVentaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteEmpresaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tarjetaVentaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.catálogoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detalle_VentaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detalle_VentaDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ventasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ventasDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,8 +378,6 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
@@ -295,12 +392,27 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
         private TarjetaVentaDataSet tarjetaVentaDataSet;
         private System.Windows.Forms.BindingSource clienteEmpresaBindingSource;
         private TarjetaVentaDataSetTableAdapters.Cliente_EmpresaTableAdapter cliente_EmpresaTableAdapter;
         private System.Windows.Forms.BindingSource catálogoBindingSource;
         private TarjetaVentaDataSetTableAdapters.CatálogoTableAdapter catálogoTableAdapter;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.BindingSource detalle_VentaBindingSource;
+        private TarjetaVentaDataSetTableAdapters.Detalle_VentaTableAdapter detalle_VentaTableAdapter;
+        private TarjetaVentaDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private TarjetaVentaDataSetTableAdapters.VentasTableAdapter ventasTableAdapter;
+        private System.Windows.Forms.DataGridView detalle_VentaDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.BindingSource ventasBindingSource;
+        private System.Windows.Forms.DataGridView ventasDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
     }
 }
