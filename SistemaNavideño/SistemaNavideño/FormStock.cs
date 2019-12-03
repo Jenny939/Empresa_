@@ -33,5 +33,11 @@ namespace SistemaNavideño
             this.stockTableAdapter.Fill(this.tarjetaVentaDataSet.Stock);
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            stockTableAdapter.modificar(tipoTextBox.Text, cantidadTextBox.Text, Convert.ToInt32(idTarjetaTextBox.Text));
+            stockTableAdapter.Fill(tarjetaVentaDataSet.Stock);
+        }
     }
 }

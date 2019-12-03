@@ -29,33 +29,33 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormStock));
             System.Windows.Forms.Label idTarjetaLabel;
             System.Windows.Forms.Label tipoLabel;
             System.Windows.Forms.Label cantidadLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormStock));
             this.tarjetaVentaDataSet = new SistemaNavideño.TarjetaVentaDataSet();
             this.stockBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.stockTableAdapter = new SistemaNavideño.TarjetaVentaDataSetTableAdapters.StockTableAdapter();
             this.tableAdapterManager = new SistemaNavideño.TarjetaVentaDataSetTableAdapters.TableAdapterManager();
+            this.catálogoTableAdapter = new SistemaNavideño.TarjetaVentaDataSetTableAdapters.CatálogoTableAdapter();
             this.stockBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.stockBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.stockDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.catálogoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.catálogoTableAdapter = new SistemaNavideño.TarjetaVentaDataSetTableAdapters.CatálogoTableAdapter();
             this.catálogoDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,6 +67,7 @@
             this.tipoTextBox = new System.Windows.Forms.TextBox();
             this.cantidadTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             idTarjetaLabel = new System.Windows.Forms.Label();
             tipoLabel = new System.Windows.Forms.Label();
             cantidadLabel = new System.Windows.Forms.Label();
@@ -79,6 +80,33 @@
             ((System.ComponentModel.ISupportInitialize)(this.catálogoDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockBindingSource1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // idTarjetaLabel
+            // 
+            idTarjetaLabel.AutoSize = true;
+            idTarjetaLabel.Location = new System.Drawing.Point(26, 72);
+            idTarjetaLabel.Name = "idTarjetaLabel";
+            idTarjetaLabel.Size = new System.Drawing.Size(55, 13);
+            idTarjetaLabel.TabIndex = 3;
+            idTarjetaLabel.Text = "Id Tarjeta:";
+            // 
+            // tipoLabel
+            // 
+            tipoLabel.AutoSize = true;
+            tipoLabel.Location = new System.Drawing.Point(50, 107);
+            tipoLabel.Name = "tipoLabel";
+            tipoLabel.Size = new System.Drawing.Size(31, 13);
+            tipoLabel.TabIndex = 5;
+            tipoLabel.Text = "Tipo:";
+            // 
+            // cantidadLabel
+            // 
+            cantidadLabel.AutoSize = true;
+            cantidadLabel.Location = new System.Drawing.Point(29, 146);
+            cantidadLabel.Name = "cantidadLabel";
+            cantidadLabel.Size = new System.Drawing.Size(52, 13);
+            cantidadLabel.TabIndex = 7;
+            cantidadLabel.Text = "Cantidad:";
             // 
             // tarjetaVentaDataSet
             // 
@@ -106,6 +134,10 @@
             this.tableAdapterManager.StockTableAdapter = this.stockTableAdapter;
             this.tableAdapterManager.UpdateOrder = SistemaNavideño.TarjetaVentaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.VentasTableAdapter = null;
+            // 
+            // catálogoTableAdapter
+            // 
+            this.catálogoTableAdapter.ClearBeforeFill = true;
             // 
             // stockBindingNavigator
             // 
@@ -136,6 +168,31 @@
             this.stockBindingNavigator.Size = new System.Drawing.Size(595, 25);
             this.stockBindingNavigator.TabIndex = 0;
             this.stockBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -169,17 +226,10 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 15);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -187,7 +237,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveNextItem.Text = "Mover siguiente";
             // 
             // bindingNavigatorMoveLastItem
@@ -196,38 +246,20 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Mover último";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorDeleteItem.Text = "Eliminar";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // stockBindingNavigatorSaveItem
             // 
             this.stockBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.stockBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("stockBindingNavigatorSaveItem.Image")));
             this.stockBindingNavigatorSaveItem.Name = "stockBindingNavigatorSaveItem";
-            this.stockBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.stockBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.stockBindingNavigatorSaveItem.Text = "Guardar datos";
             this.stockBindingNavigatorSaveItem.Click += new System.EventHandler(this.stockBindingNavigatorSaveItem_Click);
             // 
@@ -267,10 +299,6 @@
             // 
             this.catálogoBindingSource.DataMember = "Catálogo";
             this.catálogoBindingSource.DataSource = this.tarjetaVentaDataSet;
-            // 
-            // catálogoTableAdapter
-            // 
-            this.catálogoTableAdapter.ClearBeforeFill = true;
             // 
             // catálogoDataGridView
             // 
@@ -323,53 +351,26 @@
             this.stockBindingSource1.DataMember = "CatálogoStock";
             this.stockBindingSource1.DataSource = this.catálogoBindingSource;
             // 
-            // idTarjetaLabel
-            // 
-            idTarjetaLabel.AutoSize = true;
-            idTarjetaLabel.Location = new System.Drawing.Point(43, 111);
-            idTarjetaLabel.Name = "idTarjetaLabel";
-            idTarjetaLabel.Size = new System.Drawing.Size(55, 13);
-            idTarjetaLabel.TabIndex = 3;
-            idTarjetaLabel.Text = "Id Tarjeta:";
-            // 
             // idTarjetaTextBox
             // 
             this.idTarjetaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.stockBindingSource1, "IdTarjeta", true));
-            this.idTarjetaTextBox.Location = new System.Drawing.Point(104, 108);
+            this.idTarjetaTextBox.Location = new System.Drawing.Point(87, 69);
             this.idTarjetaTextBox.Name = "idTarjetaTextBox";
             this.idTarjetaTextBox.Size = new System.Drawing.Size(100, 20);
             this.idTarjetaTextBox.TabIndex = 4;
             // 
-            // tipoLabel
-            // 
-            tipoLabel.AutoSize = true;
-            tipoLabel.Location = new System.Drawing.Point(67, 146);
-            tipoLabel.Name = "tipoLabel";
-            tipoLabel.Size = new System.Drawing.Size(31, 13);
-            tipoLabel.TabIndex = 5;
-            tipoLabel.Text = "Tipo:";
-            // 
             // tipoTextBox
             // 
             this.tipoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.stockBindingSource1, "Tipo", true));
-            this.tipoTextBox.Location = new System.Drawing.Point(104, 143);
+            this.tipoTextBox.Location = new System.Drawing.Point(87, 104);
             this.tipoTextBox.Name = "tipoTextBox";
             this.tipoTextBox.Size = new System.Drawing.Size(100, 20);
             this.tipoTextBox.TabIndex = 6;
             // 
-            // cantidadLabel
-            // 
-            cantidadLabel.AutoSize = true;
-            cantidadLabel.Location = new System.Drawing.Point(46, 185);
-            cantidadLabel.Name = "cantidadLabel";
-            cantidadLabel.Size = new System.Drawing.Size(52, 13);
-            cantidadLabel.TabIndex = 7;
-            cantidadLabel.Text = "Cantidad:";
-            // 
             // cantidadTextBox
             // 
             this.cantidadTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.stockBindingSource1, "Cantidad", true));
-            this.cantidadTextBox.Location = new System.Drawing.Point(104, 182);
+            this.cantidadTextBox.Location = new System.Drawing.Point(87, 143);
             this.cantidadTextBox.Name = "cantidadTextBox";
             this.cantidadTextBox.Size = new System.Drawing.Size(100, 20);
             this.cantidadTextBox.TabIndex = 8;
@@ -377,17 +378,29 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(67, 59);
+            this.label1.Location = new System.Drawing.Point(68, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 13);
             this.label1.TabIndex = 9;
             this.label1.Text = "CAMBIAR STOCK";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(71, 179);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(89, 34);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "AGREGAR";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(595, 536);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(595, 468);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(cantidadLabel);
             this.Controls.Add(this.cantidadTextBox);
@@ -451,5 +464,6 @@
         private System.Windows.Forms.TextBox tipoTextBox;
         private System.Windows.Forms.TextBox cantidadTextBox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }
