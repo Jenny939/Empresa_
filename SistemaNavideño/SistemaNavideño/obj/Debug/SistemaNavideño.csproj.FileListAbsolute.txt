@@ -5,8 +5,9 @@ D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño
 D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\bin\Debug\SistemaNavideño.pdb
 D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.csprojResolveAssemblyReference.cache
 D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.Form1.resources
-D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.Form2.resources
 D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.Properties.Resources.resources
 D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.csproj.GenerateResource.Cache
 D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.exe
 D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.pdb
+D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.Administracion.resources
+D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.FormEmpleado.resources

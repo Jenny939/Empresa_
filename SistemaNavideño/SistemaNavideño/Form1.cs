@@ -32,7 +32,7 @@ namespace SistemaNavideño
             else if (textBox1.Text == "EmpTarjetas" && textBox2.Text == "tarjetas")
             {
                 FormEmpleado femp = new FormEmpleado();
-                femp.showDialog();
+                femp.ShowDialog();
             }
             else
             {
