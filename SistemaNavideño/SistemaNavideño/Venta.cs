@@ -34,23 +34,26 @@ namespace SistemaNavideño
         {
             int can, subto, tot;
             int id = int.Parse(textBox6.Text);
-            
+            int idv = int.Parse(textBox7.Text);
             tot = int.Parse(textBox2.Text);
             can = int.Parse(textBox4.Text);
             subto = int.Parse(textBox3.Text);
+            
             tot = tot + can * subto;
             textBox2.Text = tot.ToString();
-            detalle_VentaTableAdapter.Insert(id,can,subto);
+            detalle_VentaTableAdapter.Insertar(idv, id, can, subto);
             detalle_VentaTableAdapter.Fill(tarjetaVentaDataSet.Detalle_Venta);
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             int tot;
             int idemp = int.Parse(textBox5.Text);
+            int idv = int.Parse(textBox7.Text);
             DateTime n = DateTime.Parse(textBox1.Text);
             tot = int.Parse(textBox2.Text);
-            ventasTableAdapter.Insert(idemp, tot.ToString(), n);
+            ventasTableAdapter.Insertar(idv, idemp, tot.ToString(), n);
             ventasTableAdapter.Fill(tarjetaVentaDataSet.Ventas);
             MessageBox.Show("Venta Terminada");
             this.Close();

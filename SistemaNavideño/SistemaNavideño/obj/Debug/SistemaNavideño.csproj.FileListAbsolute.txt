@@ -61,6 +61,7 @@ D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño
 D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.Catalogos.resources
 D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.Empresas.resources
 D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.FormStock.resources
+<<<<<<< HEAD
 C:\TARJETAS\SistemaNavideño\SistemaNavideño\bin\Debug\SistemaNavideño.exe.config
 C:\TARJETAS\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.exe
 C:\TARJETAS\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.pdb
@@ -86,3 +87,12 @@ C:\TARJETAS\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.csproj.
 C:\TARJETAS\SistemaNavideño\SistemaNavideño\obj\Debug\RdlCompile.cache
 C:\TARJETAS\SistemaNavideño\SistemaNavideño\obj\Debug\RdlCompile.compiled
 C:\TARJETAS\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.Pedidos.resources
+=======
+E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.Catalogos.resources
+E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.Empresas.resources
+E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.FormStock.resources
+E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.Listado.resources
+E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.RVentas.resources
+E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\RdlCompile.cache
+E:\Informática\SIS3651\2doParcial\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\RdlCompile.compiled
+>>>>>>> 55ad92b2c76acd5f6b338043f2401fcc5160ed46
