@@ -142,6 +142,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "FormGerente";
             this.Text = "FormGerente";
+            this.Load += new System.EventHandler(this.FormGerente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

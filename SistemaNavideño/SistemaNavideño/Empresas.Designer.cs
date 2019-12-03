@@ -31,12 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Empresas));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id_cuenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.balance = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id_cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id_tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,18 +47,19 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.tarjetaVentaDataSet = new SistemaNavideño.TarjetaVentaDataSet();
-            this.clienteEmpresaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cliente_EmpresaTableAdapter = new SistemaNavideño.TarjetaVentaDataSetTableAdapters.Cliente_EmpresaTableAdapter();
             this.idEmpDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nroEmpleadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.porcentajeCompraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.afiliadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clienteEmpresaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tarjetaVentaDataSet = new SistemaNavideño.TarjetaVentaDataSet();
+            this.cliente_EmpresaTableAdapter = new SistemaNavideño.TarjetaVentaDataSetTableAdapters.Cliente_EmpresaTableAdapter();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tarjetaVentaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteEmpresaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tarjetaVentaDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -73,12 +68,6 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.Silver;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.estado,
-            this.id_cuenta,
-            this.balance,
-            this.id_cliente,
-            this.id_tipo,
-            this.Column1,
             this.idEmpDataGridViewTextBoxColumn,
             this.nombreDataGridViewTextBoxColumn,
             this.nroEmpleadoDataGridViewTextBoxColumn,
@@ -90,37 +79,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(547, 306);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // estado
-            // 
-            this.estado.HeaderText = "Id Empleado";
-            this.estado.Name = "estado";
-            this.estado.Width = 60;
-            // 
-            // id_cuenta
-            // 
-            this.id_cuenta.HeaderText = "Nombre";
-            this.id_cuenta.Name = "id_cuenta";
-            // 
-            // balance
-            // 
-            this.balance.HeaderText = "Nro. Empleado";
-            this.balance.Name = "balance";
-            // 
-            // id_cliente
-            // 
-            this.id_cliente.HeaderText = "Descripcion";
-            this.id_cliente.Name = "id_cliente";
-            // 
-            // id_tipo
-            // 
-            this.id_tipo.HeaderText = "PorcentajeCompra";
-            this.id_tipo.Name = "id_tipo";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Afiliado";
-            this.Column1.Name = "Column1";
             // 
             // label1
             // 
@@ -259,9 +217,9 @@
             this.button1.BackColor = System.Drawing.Color.Goldenrod;
             this.button1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(629, 318);
+            this.button1.Location = new System.Drawing.Point(565, 318);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 29);
+            this.button1.Size = new System.Drawing.Size(145, 29);
             this.button1.TabIndex = 17;
             this.button1.Text = "INSERTAR";
             this.button1.UseVisualStyleBackColor = false;
@@ -272,38 +230,26 @@
             this.button2.BackColor = System.Drawing.Color.Goldenrod;
             this.button2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(629, 353);
+            this.button2.Location = new System.Drawing.Point(718, 318);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(173, 29);
+            this.button2.Size = new System.Drawing.Size(145, 29);
             this.button2.TabIndex = 18;
             this.button2.Text = "MODIFICAR";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Goldenrod;
             this.button3.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(629, 388);
+            this.button3.Location = new System.Drawing.Point(718, 364);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(173, 33);
+            this.button3.Size = new System.Drawing.Size(145, 33);
             this.button3.TabIndex = 19;
             this.button3.Text = "ELIMINAR";
             this.button3.UseVisualStyleBackColor = false;
-            // 
-            // tarjetaVentaDataSet
-            // 
-            this.tarjetaVentaDataSet.DataSetName = "TarjetaVentaDataSet";
-            this.tarjetaVentaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // clienteEmpresaBindingSource
-            // 
-            this.clienteEmpresaBindingSource.DataMember = "Cliente/Empresa";
-            this.clienteEmpresaBindingSource.DataSource = this.tarjetaVentaDataSet;
-            // 
-            // cliente_EmpresaTableAdapter
-            // 
-            this.cliente_EmpresaTableAdapter.ClearBeforeFill = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // idEmpDataGridViewTextBoxColumn
             // 
@@ -341,12 +287,40 @@
             this.afiliadoDataGridViewTextBoxColumn.HeaderText = "Afiliado";
             this.afiliadoDataGridViewTextBoxColumn.Name = "afiliadoDataGridViewTextBoxColumn";
             // 
+            // clienteEmpresaBindingSource
+            // 
+            this.clienteEmpresaBindingSource.DataMember = "Cliente/Empresa";
+            this.clienteEmpresaBindingSource.DataSource = this.tarjetaVentaDataSet;
+            // 
+            // tarjetaVentaDataSet
+            // 
+            this.tarjetaVentaDataSet.DataSetName = "TarjetaVentaDataSet";
+            this.tarjetaVentaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cliente_EmpresaTableAdapter
+            // 
+            this.cliente_EmpresaTableAdapter.ClearBeforeFill = true;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Goldenrod;
+            this.button4.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(565, 364);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(145, 33);
+            this.button4.TabIndex = 20;
+            this.button4.Text = "LIMPIAR";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Empresas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(875, 433);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -368,8 +342,8 @@
             this.Text = "Empresas";
             this.Load += new System.EventHandler(this.Empresas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tarjetaVentaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteEmpresaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tarjetaVentaDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -378,12 +352,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn estado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id_cuenta;
-        private System.Windows.Forms.DataGridViewTextBoxColumn balance;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id_cliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id_tipo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -409,5 +377,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn descripccionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn porcentajeCompraDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn afiliadoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button4;
     }
 }
