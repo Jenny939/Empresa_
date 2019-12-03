@@ -53,13 +53,13 @@
             this.detalle_VentaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.detalle_VentaTableAdapter = new SistemaNavideño.TarjetaVentaDataSetTableAdapters.Detalle_VentaTableAdapter();
             this.tableAdapterManager = new SistemaNavideño.TarjetaVentaDataSetTableAdapters.TableAdapterManager();
+            this.ventasTableAdapter = new SistemaNavideño.TarjetaVentaDataSetTableAdapters.VentasTableAdapter();
             this.detalle_VentaDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ventasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ventasTableAdapter = new SistemaNavideño.TarjetaVentaDataSetTableAdapters.VentasTableAdapter();
             this.ventasDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -181,6 +181,7 @@
             this.button1.TabIndex = 16;
             this.button1.Text = "Aceptar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -251,6 +252,10 @@
             this.tableAdapterManager.UpdateOrder = SistemaNavideño.TarjetaVentaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.VentasTableAdapter = this.ventasTableAdapter;
             // 
+            // ventasTableAdapter
+            // 
+            this.ventasTableAdapter.ClearBeforeFill = true;
+            // 
             // detalle_VentaDataGridView
             // 
             this.detalle_VentaDataGridView.AutoGenerateColumns = false;
@@ -295,10 +300,6 @@
             this.ventasBindingSource.DataMember = "Ventas";
             this.ventasBindingSource.DataSource = this.tarjetaVentaDataSet;
             // 
-            // ventasTableAdapter
-            // 
-            this.ventasTableAdapter.ClearBeforeFill = true;
-            // 
             // ventasDataGridView
             // 
             this.ventasDataGridView.AutoGenerateColumns = false;
@@ -309,7 +310,7 @@
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8});
             this.ventasDataGridView.DataSource = this.ventasBindingSource;
-            this.ventasDataGridView.Location = new System.Drawing.Point(387, 39);
+            this.ventasDataGridView.Location = new System.Drawing.Point(385, 43);
             this.ventasDataGridView.Name = "ventasDataGridView";
             this.ventasDataGridView.Size = new System.Drawing.Size(344, 112);
             this.ventasDataGridView.TabIndex = 19;
