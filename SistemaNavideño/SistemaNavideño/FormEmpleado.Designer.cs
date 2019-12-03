@@ -37,28 +37,32 @@
             this.registroDeEmpresasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroDeCatálogosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reservaDePedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.listaClientesToolStripMenuItem,
+            this.yOtroCasoToolStripMenuItem,
             this.otroCasoToolStripMenuItem,
-            this.yOtroCasoToolStripMenuItem});
+            this.listaClientesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(632, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(653, 24);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // listaClientesToolStripMenuItem
             // 
             this.listaClientesToolStripMenuItem.Name = "listaClientesToolStripMenuItem";
-            this.listaClientesToolStripMenuItem.Size = new System.Drawing.Size(110, 20);
-            this.listaClientesToolStripMenuItem.Text = "Lista Clientes";
+            this.listaClientesToolStripMenuItem.Size = new System.Drawing.Size(190, 20);
+            this.listaClientesToolStripMenuItem.Text = "Lista Clientes Potenciales";
+            this.listaClientesToolStripMenuItem.Click += new System.EventHandler(this.listaClientesToolStripMenuItem_Click);
             // 
             // otroCasoToolStripMenuItem
             // 
@@ -105,12 +109,36 @@
             this.reservaDePedidosToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
             this.reservaDePedidosToolStripMenuItem.Text = "Reserva de Pedidos";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(59, 79);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(180, 196);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Goldenrod;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button2.Location = new System.Drawing.Point(12, 349);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(160, 44);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "SALIR";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // FormEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(632, 370);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(653, 405);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "FormEmpleado";
@@ -119,6 +147,7 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,5 +163,7 @@
         private System.Windows.Forms.ToolStripMenuItem registroDeEmpresasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registroDeCatálogosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reservaDePedidosToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button2;
     }
 }

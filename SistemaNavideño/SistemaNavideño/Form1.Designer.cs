@@ -58,9 +58,9 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Location = new System.Drawing.Point(226, 270);
+            this.panel1.Location = new System.Drawing.Point(199, 270);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(307, 109);
+            this.panel1.Size = new System.Drawing.Size(364, 109);
             this.panel1.TabIndex = 9;
             // 
             // label1
@@ -90,7 +90,7 @@
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(163, 14);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(122, 31);
+            this.textBox1.Size = new System.Drawing.Size(184, 31);
             this.textBox1.TabIndex = 7;
             // 
             // textBox2
@@ -99,7 +99,7 @@
             this.textBox2.Location = new System.Drawing.Point(163, 53);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '•';
-            this.textBox2.Size = new System.Drawing.Size(122, 31);
+            this.textBox2.Size = new System.Drawing.Size(184, 31);
             this.textBox2.TabIndex = 8;
             // 
             // button1

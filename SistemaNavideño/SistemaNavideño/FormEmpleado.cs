@@ -26,5 +26,10 @@ namespace SistemaNavideño
         {
 
         }
+
+        private void listaClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
