@@ -54,24 +54,24 @@
             this.detalle_VentaTableAdapter = new SistemaNavideño.TarjetaVentaDataSetTableAdapters.Detalle_VentaTableAdapter();
             this.tableAdapterManager = new SistemaNavideño.TarjetaVentaDataSetTableAdapters.TableAdapterManager();
             this.ventasTableAdapter = new SistemaNavideño.TarjetaVentaDataSetTableAdapters.VentasTableAdapter();
-            this.detalle_VentaDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ventasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ventasDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.detalle_VentaDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.clienteEmpresaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tarjetaVentaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.catálogoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detalle_VentaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.detalle_VentaDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ventasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ventasDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detalle_VentaDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -256,45 +256,6 @@
             // 
             this.ventasTableAdapter.ClearBeforeFill = true;
             // 
-            // detalle_VentaDataGridView
-            // 
-            this.detalle_VentaDataGridView.AutoGenerateColumns = false;
-            this.detalle_VentaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.detalle_VentaDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4});
-            this.detalle_VentaDataGridView.DataSource = this.detalle_VentaBindingSource;
-            this.detalle_VentaDataGridView.Location = new System.Drawing.Point(344, 174);
-            this.detalle_VentaDataGridView.Name = "detalle_VentaDataGridView";
-            this.detalle_VentaDataGridView.Size = new System.Drawing.Size(387, 99);
-            this.detalle_VentaDataGridView.TabIndex = 19;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "IdVenta";
-            this.dataGridViewTextBoxColumn1.HeaderText = "IdVenta";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "IdTarjeta";
-            this.dataGridViewTextBoxColumn2.HeaderText = "IdTarjeta";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Cantidad";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Cantidad";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "SubTotal";
-            this.dataGridViewTextBoxColumn4.HeaderText = "SubTotal";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
             // ventasBindingSource
             // 
             this.ventasBindingSource.DataMember = "Ventas";
@@ -339,13 +300,52 @@
             this.dataGridViewTextBoxColumn8.HeaderText = "Fecha";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             // 
+            // detalle_VentaDataGridView
+            // 
+            this.detalle_VentaDataGridView.AutoGenerateColumns = false;
+            this.detalle_VentaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.detalle_VentaDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4});
+            this.detalle_VentaDataGridView.DataSource = this.detalle_VentaBindingSource;
+            this.detalle_VentaDataGridView.Location = new System.Drawing.Point(350, 187);
+            this.detalle_VentaDataGridView.Name = "detalle_VentaDataGridView";
+            this.detalle_VentaDataGridView.Size = new System.Drawing.Size(448, 112);
+            this.detalle_VentaDataGridView.TabIndex = 19;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "IdVenta";
+            this.dataGridViewTextBoxColumn1.HeaderText = "IdVenta";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "IdTarjeta";
+            this.dataGridViewTextBoxColumn2.HeaderText = "IdTarjeta";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Cantidad";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Cantidad";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "SubTotal";
+            this.dataGridViewTextBoxColumn4.HeaderText = "SubTotal";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
             // Venta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(741, 296);
-            this.Controls.Add(this.ventasDataGridView);
+            this.ClientSize = new System.Drawing.Size(842, 304);
             this.Controls.Add(this.detalle_VentaDataGridView);
+            this.Controls.Add(this.ventasDataGridView);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.button2);
@@ -369,9 +369,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.tarjetaVentaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.catálogoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.detalle_VentaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.detalle_VentaDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ventasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ventasDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detalle_VentaDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -404,16 +404,16 @@
         private TarjetaVentaDataSetTableAdapters.Detalle_VentaTableAdapter detalle_VentaTableAdapter;
         private TarjetaVentaDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private TarjetaVentaDataSetTableAdapters.VentasTableAdapter ventasTableAdapter;
-        private System.Windows.Forms.DataGridView detalle_VentaDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.BindingSource ventasBindingSource;
         private System.Windows.Forms.DataGridView ventasDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridView detalle_VentaDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
     }
 }
