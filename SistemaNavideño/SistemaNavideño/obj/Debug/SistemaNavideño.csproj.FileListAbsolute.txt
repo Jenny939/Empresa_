@@ -1,1 +1,2 @@
 c:\users\ctech\documents\visual studio 2012\Projects\SistemaNavideño\SistemaNavideño\bin\Debug\SistemaNavideño.exe.config
+D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\bin\Debug\SistemaNavideño.exe.config
