@@ -29,17 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-<<<<<<< HEAD
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Administracion));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-=======
+           this.pictureBox1 = new System.Windows.Forms.PictureBox();
             System.Windows.Forms.Label cod_EmpleadoLabel;
             System.Windows.Forms.Label cILabel;
             System.Windows.Forms.Label nombreLabel;
             System.Windows.Forms.Label apellidoLabel;
             System.Windows.Forms.Label cargoLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Administracion));
->>>>>>> c737bf17e48f58e7c72951ccb3854e7e0ed4b72f
+           System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Administracion));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.listaClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.otroCasoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -74,7 +71,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-<<<<<<< HEAD
             this.empleadoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tarjetaVentaDataSet = new SistemaNavideño.TarjetaVentaDataSet();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -87,7 +83,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-=======
             cod_EmpleadoLabel = new System.Windows.Forms.Label();
             cILabel = new System.Windows.Forms.Label();
             nombreLabel = new System.Windows.Forms.Label();
@@ -96,7 +91,6 @@
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tarjetaVentaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.empleadoBindingSource)).BeginInit();
->>>>>>> c737bf17e48f58e7c72951ccb3854e7e0ed4b72f
             ((System.ComponentModel.ISupportInitialize)(this.empleadoBindingNavigator)).BeginInit();
             this.empleadoBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.empleadoDataGridView)).BeginInit();
@@ -360,7 +354,6 @@
             this.label1.Text = "REGISTRO DE EMPLEADOS";
             this.label1.Visible = false;
             // 
-<<<<<<< HEAD
             // cod_EmpleadoLabel
             // 
             this.cod_EmpleadoLabel.AutoSize = true;
@@ -372,8 +365,6 @@
             this.cod_EmpleadoLabel.Text = "Cod Empleado:";
             this.cod_EmpleadoLabel.Visible = false;
             // 
-=======
->>>>>>> c737bf17e48f58e7c72951ccb3854e7e0ed4b72f
             // cod_EmpleadoTextBox
             // 
             this.cod_EmpleadoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empleadoBindingSource, "Cod_Empleado", true));
@@ -384,7 +375,6 @@
             this.cod_EmpleadoTextBox.TabIndex = 16;
             this.cod_EmpleadoTextBox.Visible = false;
             // 
-<<<<<<< HEAD
             // cILabel
             // 
             this.cILabel.AutoSize = true;
@@ -396,8 +386,6 @@
             this.cILabel.Text = "CI:";
             this.cILabel.Visible = false;
             // 
-=======
->>>>>>> c737bf17e48f58e7c72951ccb3854e7e0ed4b72f
             // cITextBox
             // 
             this.cITextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empleadoBindingSource, "CI", true));
@@ -408,7 +396,6 @@
             this.cITextBox.TabIndex = 17;
             this.cITextBox.Visible = false;
             // 
-<<<<<<< HEAD
             // nombreLabel
             // 
             this.nombreLabel.AutoSize = true;
@@ -420,8 +407,6 @@
             this.nombreLabel.Text = "Nombre:";
             this.nombreLabel.Visible = false;
             // 
-=======
->>>>>>> c737bf17e48f58e7c72951ccb3854e7e0ed4b72f
             // nombreTextBox
             // 
             this.nombreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empleadoBindingSource, "Nombre", true));
@@ -432,7 +417,7 @@
             this.nombreTextBox.TabIndex = 18;
             this.nombreTextBox.Visible = false;
             // 
-<<<<<<< HEAD
+
             // apellidoLabel
             // 
             this.apellidoLabel.AutoSize = true;
@@ -444,8 +429,8 @@
             this.apellidoLabel.Text = "Apellido:";
             this.apellidoLabel.Visible = false;
             // 
-=======
->>>>>>> c737bf17e48f58e7c72951ccb3854e7e0ed4b72f
+
+
             // apellidoTextBox
             // 
             this.apellidoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empleadoBindingSource, "Apellido", true));
@@ -456,7 +441,6 @@
             this.apellidoTextBox.TabIndex = 19;
             this.apellidoTextBox.Visible = false;
             // 
-<<<<<<< HEAD
             // cargoLabel
             // 
             this.cargoLabel.AutoSize = true;
@@ -468,8 +452,6 @@
             this.cargoLabel.Text = "Cargo:";
             this.cargoLabel.Visible = false;
             // 
-=======
->>>>>>> c737bf17e48f58e7c72951ccb3854e7e0ed4b72f
             // cargoTextBox
             // 
             this.cargoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empleadoBindingSource, "Cargo", true));
@@ -614,12 +596,9 @@
             this.Load += new System.EventHandler(this.Administracion_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-<<<<<<< HEAD
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-=======
+            //((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tarjetaVentaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.empleadoBindingSource)).EndInit();
->>>>>>> c737bf17e48f58e7c72951ccb3854e7e0ed4b72f
             ((System.ComponentModel.ISupportInitialize)(this.empleadoBindingNavigator)).EndInit();
             this.empleadoBindingNavigator.ResumeLayout(false);
             this.empleadoBindingNavigator.PerformLayout();
