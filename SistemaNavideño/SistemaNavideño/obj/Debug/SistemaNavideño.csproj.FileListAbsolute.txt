@@ -111,3 +111,4 @@ E:\Informática\SIS3651\2doParcial\Prueba\Empresa_Navide-a\SistemaNavideño\Sist
 E:\Informática\SIS3651\2doParcial\Prueba\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\RdlCompile.compiled
 E:\Informática\SIS3651\2doParcial\Prueba\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.exe
 E:\Informática\SIS3651\2doParcial\Prueba\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\bin\Debug\SistemaNavideño.exe.config
+D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.Listado.resources
