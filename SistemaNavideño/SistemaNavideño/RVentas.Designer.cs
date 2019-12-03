@@ -31,11 +31,14 @@
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.TarjetaVentaDataSet = new SistemaNavideño.TarjetaVentaDataSet();
             this.VentasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.TarjetaVentaDataSet = new SistemaNavideño.TarjetaVentaDataSet();
             this.VentasTableAdapter = new SistemaNavideño.TarjetaVentaDataSetTableAdapters.VentasTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.TarjetaVentaDataSet)).BeginInit();
+            this.ReporteVentaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ReporteVentaTableAdapter = new SistemaNavideño.TarjetaVentaDataSetTableAdapters.ReporteVentaTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.VentasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TarjetaVentaDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ReporteVentaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // reportViewer1
@@ -49,19 +52,28 @@
             this.reportViewer1.Size = new System.Drawing.Size(487, 292);
             this.reportViewer1.TabIndex = 0;
             // 
-            // TarjetaVentaDataSet
-            // 
-            this.TarjetaVentaDataSet.DataSetName = "TarjetaVentaDataSet";
-            this.TarjetaVentaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // VentasBindingSource
             // 
             this.VentasBindingSource.DataMember = "Ventas";
             this.VentasBindingSource.DataSource = this.TarjetaVentaDataSet;
             // 
+            // TarjetaVentaDataSet
+            // 
+            this.TarjetaVentaDataSet.DataSetName = "TarjetaVentaDataSet";
+            this.TarjetaVentaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // VentasTableAdapter
             // 
             this.VentasTableAdapter.ClearBeforeFill = true;
+            // 
+            // ReporteVentaBindingSource
+            // 
+            this.ReporteVentaBindingSource.DataMember = "ReporteVenta";
+            this.ReporteVentaBindingSource.DataSource = this.TarjetaVentaDataSet;
+            // 
+            // ReporteVentaTableAdapter
+            // 
+            this.ReporteVentaTableAdapter.ClearBeforeFill = true;
             // 
             // RVentas
             // 
@@ -72,8 +84,9 @@
             this.Name = "RVentas";
             this.Text = "RVentas";
             this.Load += new System.EventHandler(this.RVentas_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.TarjetaVentaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.VentasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TarjetaVentaDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ReporteVentaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -84,5 +97,7 @@
         private System.Windows.Forms.BindingSource VentasBindingSource;
         private TarjetaVentaDataSet TarjetaVentaDataSet;
         private TarjetaVentaDataSetTableAdapters.VentasTableAdapter VentasTableAdapter;
+        private System.Windows.Forms.BindingSource ReporteVentaBindingSource;
+        private TarjetaVentaDataSetTableAdapters.ReporteVentaTableAdapter ReporteVentaTableAdapter;
     }
 }
