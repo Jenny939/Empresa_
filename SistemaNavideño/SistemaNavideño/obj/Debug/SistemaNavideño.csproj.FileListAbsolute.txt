@@ -31,3 +31,9 @@ C:\PARCIAL\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.exe
 C:\PARCIAL\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.pdb
 >>>>>>> f42cfbf7b55746f152766c28e50944554a1ceb06
 D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.Venta.resources
+D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.FormGEmpleados.resources
+D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\obj\Debug\SistemaNavideño.FormGerente.resources
+D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\bin\Debug\TarjetaVentaDataSet.Designer.cs
+D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\bin\Debug\TarjetaVentaDataSet.xsc
+D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\bin\Debug\TarjetaVentaDataSet.xsd
+D:\DISEÑO\TarjetasNavideñas\Empresa_Navide-a\SistemaNavideño\SistemaNavideño\bin\Debug\TarjetaVentaDataSet.xss

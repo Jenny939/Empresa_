@@ -26,8 +26,8 @@ namespace SistemaNavideño
         {
             if (textBox1.Text == "AdminTarjetas" && textBox2.Text == "navidad")
             {
-                //Administracion adm= new Administracion();
-                //adm.ShowDialog();
+                FormGerente adm= new FormGerente();
+                adm.ShowDialog();
             }
             else if (textBox1.Text == "EmpTarjetas" && textBox2.Text == "tarjetas")
             {
